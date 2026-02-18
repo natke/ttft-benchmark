@@ -1,0 +1,475 @@
+[2026-02-18 09:03:55] ======================================================================
+[2026-02-18 09:03:55] TTFT Constitution Document Benchmark
+[2026-02-18 09:03:55] ======================================================================
+[2026-02-18 09:03:55] Platform : Windows-11-10.0.26567-SP0
+[2026-02-18 09:03:55] Machine  : AMD64
+[2026-02-18 09:03:55] Processor: Intel64 Family 6 Model 154 Stepping 4, GenuineIntel
+[2026-02-18 09:03:55] Hostname : trixie
+[2026-02-18 09:03:55] Python   : 3.14.0 (tags/v3.14.0:ebf955d, Oct  7 2025, 10:15:03) [MSC v.1944 64 bit (AMD64)]
+[2026-02-18 09:03:55] Output   : C:\Users\nakersha\Develop\tests\ttft\model-performance-tests\results/ttft_constit_windows
+[2026-02-18 09:03:55] Prompt lengths: [1000, 2000, 5000, 10000, 15000, 20000, 25000, 30000]
+[2026-02-18 09:03:55] Iterations    : 3
+[2026-02-18 09:03:55] Max tokens    : 200
+[2026-02-18 09:03:55] Skip llama.cpp: False
+[2026-02-18 09:03:55] Skip Foundry  : False
+[2026-02-18 09:03:55] 
+[2026-02-18 09:03:55] Document loaded: 44193 chars (~11048 tokens)
+[2026-02-18 09:03:55] 
+[2026-02-18 09:03:55] Ensuring Foundry Local is stopped before llama.cpp tests...
+[2026-02-18 09:03:55]   Killing any remaining Foundry Local processes...
+[2026-02-18 09:04:10] 
+[2026-02-18 09:04:10] 
+[2026-02-18 09:04:10] ======================================================================
+[2026-02-18 09:04:10]   Phi-3.5-mini Q4 (llama.cpp)
+[2026-02-18 09:04:10] ======================================================================
+[2026-02-18 09:04:10] CMD: llama-server --host 0.0.0.0 --port 8080 --model C:\Users\nakersha\Develop\tests\ttft\model-performance-tests\models\Phi-3.5-mini-instruct-Q4_K_M.gguf -ngl 99 -c 32768 --no-cache-prompt
+[2026-02-18 09:04:40] llama-server ready.
+[2026-02-18 09:04:41]   Prompt length target: ~1000 tokens (4000 chars)
+[2026-02-18 09:04:41]     Iteration 1/3...
+[2026-02-18 09:05:06]       TTFT: 10.416s | Throughput: 8.0 t/s | Tokens: 200
+[2026-02-18 09:05:06]       --- Response (Phi-3.5-mini Q4 (llama.cpp), ~1000 tokens) ---
+[2026-02-18 09:05:06]       | The U.S. Constitution establishes a bicameral legislature, with Congress consisting of the Senate and the House of Representatives. The House has representatives chosen every two years by the people from states based on population, with a cap of one representative per thirty thousand people and a minimum of one per state until an actual enumeration is done. Representatives must be at least 25 years old and U.S. citizens for seven years, residing in the state they represent. The Senate comprises two senators from each state, elected for six years with staggered terms to ensure continuity. Senators must be at least 30 years old and nine years U.S. citizens, residing in the state they represent. The Vice President presides over the Senate but has no vote unless there's a tie. The Senate has the exclusive power to impeach and try all impeachments.
+[2026-02-18 09:05:06]       | 
+[2026-02-18 09:05:06]       | Key points:
+[2026-02-18 09:05:06]       | - Bicameral
+[2026-02-18 09:05:06]       --- End response ---
+[2026-02-18 09:05:06]     Iteration 2/3...
+[2026-02-18 09:05:28]       TTFT: 8.341s | Throughput: 8.8 t/s | Tokens: 200
+[2026-02-18 09:05:29]     Iteration 3/3...
+[2026-02-18 09:05:51]       TTFT: 8.386s | Throughput: 8.8 t/s | Tokens: 200
+[2026-02-18 09:05:51]     Summary: TTFT avg=9.048s, min=8.341s, max=10.416s
+[2026-02-18 09:05:51]   Prompt length target: ~2000 tokens (8000 chars)
+[2026-02-18 09:05:51]     Iteration 1/3...
+[2026-02-18 09:06:26]       TTFT: 18.754s | Throughput: 5.8 t/s | Tokens: 200
+[2026-02-18 09:06:26]       --- Response (Phi-3.5-mini Q4 (llama.cpp), ~2000 tokens) ---
+[2026-02-18 09:06:26]       | The U.S. Constitution establishes a bicameral legislature, with Congress consisting of the Senate and the House of Representatives. The House has members elected every two years by the people, with certain age and citizenship requirements. Representation is apportioned according to state population, with a minimum of one per state. The Senate is composed of two senators from each state, elected for six-year terms, with staggered terms to ensure continuity. The Vice President presides over the Senate but has no vote except to break ties. The Senate has the sole power to try impeachments.
+[2026-02-18 09:06:26]       | 
+[2026-02-18 09:06:26]       | Elections for both houses are determined by state legislatures, with Congress assembling at least annually on the first Monday of December. Both houses have rules and procedures for conducting business, including the ability to punish members and expel them. Senators and Representatives receive compensation and are protected from arrest during sessions. Only House-originated b
+[2026-02-18 09:06:26]       --- End response ---
+[2026-02-18 09:06:26]     Iteration 2/3...
+[2026-02-18 09:07:01]       TTFT: 18.993s | Throughput: 5.6 t/s | Tokens: 200
+[2026-02-18 09:07:01]     Iteration 3/3...
+[2026-02-18 09:07:38]       TTFT: 19.858s | Throughput: 5.5 t/s | Tokens: 200
+[2026-02-18 09:07:38]     Summary: TTFT avg=19.202s, min=18.754s, max=19.858s
+[2026-02-18 09:07:38]   Prompt length target: ~5000 tokens (20000 chars)
+[2026-02-18 09:07:38]     Iteration 1/3...
+[2026-02-18 09:09:25]       TTFT: 86.027s | Throughput: 1.9 t/s | Tokens: 200
+[2026-02-18 09:09:25]       --- Response (Phi-3.5-mini Q4 (llama.cpp), ~5000 tokens) ---
+[2026-02-18 09:09:25]       | The U.S. Constitution establishes a government with legislative, executive, and judicial branches to ensure justice, domestic tranquility, national defense, welfare, and liberty. Congress, comprising the Senate and House of Representatives, is granted legislative power, with representatives apportioned by state population and a minimum of one per state. Senators and Representatives are elected under specified age and residency requirements, and Congress has the sole power of impeachment. The Senate elects its officers, while the House elects a Speaker and has a President pro tempore. Both houses are accountable for their proceedings and rules, with members protected from arrest while in session.
+[2026-02-18 09:09:25]       | 
+[2026-02-18 09:09:25]       | The executive branch is headed by a President serving a four-year term, elected by state-appointed electors. The President holds military and diplomatic authority, recommends legislation, and has the power to grant pardons, appoint officials, and ensure
+[2026-02-18 09:09:25]       --- End response ---
+[2026-02-18 09:09:25]     Iteration 2/3...
+[2026-02-18 09:11:13]       TTFT: 85.487s | Throughput: 1.9 t/s | Tokens: 200
+[2026-02-18 09:11:13]     Iteration 3/3...
+[2026-02-18 09:13:04]       TTFT: 88.173s | Throughput: 1.8 t/s | Tokens: 200
+[2026-02-18 09:13:04]     Summary: TTFT avg=86.563s, min=85.487s, max=88.173s
+[2026-02-18 09:13:04]   Prompt length target: ~10000 tokens (40000 chars)
+[2026-02-18 09:13:04]     Iteration 1/3...
+[2026-02-18 09:19:03]       TTFT: 326.500s | Throughput: 0.6 t/s | Tokens: 200
+[2026-02-18 09:19:03]       --- Response (Phi-3.5-mini Q4 (llama.cpp), ~10000 tokens) ---
+[2026-02-18 09:19:03]       | The U.S. Constitution establishes the framework for the federal government, detailing the structure and powers of Congress and the presidency, as well as the rights of citizens. Congress consists of a Senate and House of Representatives, with specific eligibility requirements and terms. The Senate is composed of two senators per state, serving six-year terms, while the House is based on population, with a cap of one representative per thirty thousand citizens. Congress has broad powers, including taxation, regulation of commerce, and maintaining armed forces, but is limited in prohibiting slavery, denying states' rights, and imposing direct taxes. The presidency is vested in a four-year term, with a Vice President, and the president is Commander-in-Chief, with powers to appoint judges and manage the military. Congress must convene annually, and the judiciary is established with judges serving for life.
+[2026-02-18 09:19:03]       | 
+[2026-02-18 09:19:03]       | The Constitution also out
+[2026-02-18 09:19:03]       --- End response ---
+[2026-02-18 09:19:03]     Iteration 2/3...
+[2026-02-18 09:24:49]       TTFT: 317.692s | Throughput: 0.6 t/s | Tokens: 200
+[2026-02-18 09:24:49]     Iteration 3/3...
+[2026-02-18 09:30:51]       TTFT: 327.458s | Throughput: 0.6 t/s | Tokens: 200
+[2026-02-18 09:30:51]     Summary: TTFT avg=323.883s, min=317.692s, max=327.458s
+[2026-02-18 09:30:51]   Prompt length target: ~15000 tokens (60000 chars)
+[2026-02-18 09:30:51]     Iteration 1/3...
+[2026-02-18 09:42:32]       TTFT: 664.521s | Throughput: 0.3 t/s | Tokens: 200
+[2026-02-18 09:42:32]       --- Response (Phi-3.5-mini Q4 (llama.cpp), ~15000 tokens) ---
+[2026-02-18 09:42:32]       | The Constitution of the United States establishes a federal government with three branches: legislative, executive, and judicial. 
+[2026-02-18 09:42:32]       | 
+[2026-02-18 09:42:32]       | The legislative branch, Congress, is bicameral, consisting of the Senate and the House of Representatives. Representation is based on state population with certain minimum representation for each state. Congress has powers to make laws, declare war, regulate commerce, and manage finances. The House originates revenue bills, while the Senate can propose amendments and approve treaties. 
+[2026-02-18 09:42:32]       | 
+[2026-02-18 09:42:32]       | The executive branch is headed by the President, elected for a four-year term alongside the Vice President, with the power to enforce laws, command the military, and appoint officials, subject to Senate confirmation. The President must take an oath to execute the office faithfully.
+[2026-02-18 09:42:32]       | 
+[2026-02-18 09:42:32]       | The judicial branch includes the Supreme Court and other federal courts. It has jurisdiction over federal laws, treaties, and state-to-state
+[2026-02-18 09:42:32]       --- End response ---
+[2026-02-18 09:42:32]     Iteration 2/3...
+[2026-02-18 10:35:16] ======================================================================
+[2026-02-18 10:35:16] TTFT Constitution Document Benchmark
+[2026-02-18 10:35:16] ======================================================================
+[2026-02-18 10:35:16] Platform : Windows-11-10.0.26567-SP0
+[2026-02-18 10:35:16] Machine  : AMD64
+[2026-02-18 10:35:16] Processor: Intel64 Family 6 Model 154 Stepping 4, GenuineIntel
+[2026-02-18 10:35:16] Hostname : trixie
+[2026-02-18 10:35:16] Python   : 3.14.0 (tags/v3.14.0:ebf955d, Oct  7 2025, 10:15:03) [MSC v.1944 64 bit (AMD64)]
+[2026-02-18 10:35:16] Output   : c:\Users\nakersha\Develop\tests\ttft\model-performance-tests\results\ttft_constit_windows
+[2026-02-18 10:35:16] Prompt lengths: [1000, 2000, 5000, 10000, 15000, 20000, 25000, 30000]
+[2026-02-18 10:35:16] Iterations    : 3
+[2026-02-18 10:35:16] Max tokens    : 200
+[2026-02-18 10:35:16] Timeout/iter  : 300s
+[2026-02-18 10:35:16] Skip llama.cpp: False
+[2026-02-18 10:35:16] Skip Foundry  : False
+[2026-02-18 10:35:16] Skip models   : ['Phi-3.5-mini Q4 (llama.cpp)']
+[2026-02-18 10:35:16] Merge data    : c:/Users/nakersha/Develop/tests/ttft/model-performance-tests/results/ttft_constit_windows/ttft_data.json
+[2026-02-18 10:35:16] 
+[2026-02-18 10:35:16] Document loaded: 44193 chars (~11048 tokens)
+[2026-02-18 10:35:16] 
+[2026-02-18 10:35:16] Loaded existing data: ['Phi-3.5-mini Q4 (llama.cpp)']
+[2026-02-18 10:35:16] Ensuring Foundry Local is stopped before llama.cpp tests...
+[2026-02-18 10:35:16]   Killing any remaining Foundry Local processes...
+[2026-02-18 10:35:33] 
+[2026-02-18 10:35:33] Skipping Phi-3.5-mini Q4 (llama.cpp) (--skip-model)
+[2026-02-18 10:35:33] 
+[2026-02-18 10:35:33] ======================================================================
+[2026-02-18 10:35:33]   Qwen2.5-1.5B Q4 (llama.cpp)
+[2026-02-18 10:35:33] ======================================================================
+[2026-02-18 10:35:33] CMD: llama-server --host 0.0.0.0 --port 8080 --model c:\Users\nakersha\Develop\tests\ttft\model-performance-tests\models\Qwen2.5-1.5B-Instruct-Q4_K_M.gguf -ngl 99 -c 32768 --no-cache-prompt
+[2026-02-18 10:35:39] llama-server ready.
+[2026-02-18 10:35:40]   Prompt length target: ~1000 tokens (4000 chars)
+[2026-02-18 10:35:40]     Iteration 1/3...
+[2026-02-18 10:35:48]       TTFT: 6.403s | Throughput: 5.0 t/s | Tokens: 40
+[2026-02-18 10:35:48]       --- Response (Qwen2.5-1.5B Q4 (llama.cpp), ~1000 tokens) ---
+[2026-02-18 10:35:48]       | The Constitution outlines the structure of the legislative branch of the United States government, including the powers of Congress and the House and Senate, as well as procedures for apportioning representation and electing officials.
+[2026-02-18 10:35:48]       --- End response ---
+[2026-02-18 10:35:48]     Iteration 2/3...
+[2026-02-18 10:35:56]       TTFT: 4.663s | Throughput: 10.5 t/s | Tokens: 86
+[2026-02-18 10:35:56]     Iteration 3/3...
+[2026-02-18 10:36:07]       TTFT: 4.962s | Throughput: 12.9 t/s | Tokens: 141
+[2026-02-18 10:36:07]     Summary: TTFT avg=5.343s, min=4.663s, max=6.403s
+[2026-02-18 10:36:07]   Prompt length target: ~2000 tokens (8000 chars)
+[2026-02-18 10:36:07]     Iteration 1/3...
+[2026-02-18 10:36:23]       TTFT: 9.486s | Throughput: 9.7 t/s | Tokens: 150
+[2026-02-18 10:36:23]       --- Response (Qwen2.5-1.5B Q4 (llama.cpp), ~2000 tokens) ---
+[2026-02-18 10:36:23]       | The Constitution establishes the structure and powers of the United States government. The legislative branch consists of two houses: the Senate and the House of Representatives. Senators are chosen by state legislatures and serve six-year terms. Representatives are chosen by the people of their respective states every second year and must be at least 25 years old and a citizen of the United States for 7 years. Senators and representatives have the power to impeach federal officials. The House of Representatives has the power to impeach federal officials and the Senate has the power to try and decide the case. Each house has the power to determine its own rules and punish its members. Congress must pass a bill for raising revenue, and the president must either approve or return it with objections.
+[2026-02-18 10:36:23]       --- End response ---
+[2026-02-18 10:36:23]     Iteration 2/3...
+[2026-02-18 10:36:36]       TTFT: 9.439s | Throughput: 7.9 t/s | Tokens: 110
+[2026-02-18 10:36:36]     Iteration 3/3...
+[2026-02-18 10:36:48]       TTFT: 9.393s | Throughput: 5.1 t/s | Tokens: 61
+[2026-02-18 10:36:48]     Summary: TTFT avg=9.439s, min=9.393s, max=9.486s
+[2026-02-18 10:36:48]   Prompt length target: ~5000 tokens (20000 chars)
+[2026-02-18 10:36:48]     Iteration 1/3...
+[2026-02-18 10:37:31]       TTFT: 38.747s | Throughput: 2.2 t/s | Tokens: 96
+[2026-02-18 10:37:31]       --- Response (Qwen2.5-1.5B Q4 (llama.cpp), ~5000 tokens) ---
+[2026-02-18 10:37:31]       | The document is the United States Constitution, a document that outlines the structure and powers of the United States government. It outlines the structure of the government with three branches: the legislative branch, consisting of the Senate and House of Representatives; the executive branch, consisting of the President and Vice President; and the judicial branch, consisting of the Supreme Court and lower courts. The Constitution outlines the powers of each branch, including the right to represent the people and the right to hold public office.
+[2026-02-18 10:37:31]       --- End response ---
+[2026-02-18 10:37:31]     Iteration 2/3...
+[2026-02-18 10:38:18]       TTFT: 40.489s | Throughput: 3.0 t/s | Tokens: 138
+[2026-02-18 10:38:18]     Iteration 3/3...
+[2026-02-18 10:39:01]       TTFT: 38.221s | Throughput: 2.5 t/s | Tokens: 106
+[2026-02-18 10:39:01]     Summary: TTFT avg=39.152s, min=38.221s, max=40.489s
+[2026-02-18 10:39:01]   Prompt length target: ~10000 tokens (40000 chars)
+[2026-02-18 10:39:01]     Iteration 1/3...
+[2026-02-18 10:41:21]       TTFT: 130.994s | Throughput: 1.3 t/s | Tokens: 181
+[2026-02-18 10:41:21]       --- Response (Qwen2.5-1.5B Q4 (llama.cpp), ~10000 tokens) ---
+[2026-02-18 10:41:21]       | The Constitution of the United States is a document that outlines the powers and duties of the federal government. It was adopted on September 17, 1787, at the Constitutional Convention in Philadelphia. The Constitution establishes the structure of the federal government, including the powers of the Congress, the executive branch, and the judiciary. Key components include the legislative process, which includes elections, rules, and the power to impeach and remove officials. The Constitution also outlines the rights of citizens, including the right to a speedy and public trial, the right to keep and bear arms, and the protection against unreasonable searches and seizures. Other important provisions include the rights of states and the powers of Congress to regulate commerce with foreign nations and among the states. The Constitution also outlines the powers of the President, including the right to veto bills, the power to declare war, and the authority to appoint federal officials.
+[2026-02-18 10:41:21]       --- End response ---
+[2026-02-18 10:41:21]     Iteration 2/3...
+[2026-02-18 10:43:42]       TTFT: 130.780s | Throughput: 1.4 t/s | Tokens: 200
+[2026-02-18 10:43:42]     Iteration 3/3...
+[2026-02-18 10:46:12]       TTFT: 139.105s | Throughput: 1.3 t/s | Tokens: 200
+[2026-02-18 10:46:12]     Summary: TTFT avg=133.627s, min=130.780s, max=139.105s
+[2026-02-18 10:46:12]   Prompt length target: ~15000 tokens (60000 chars)
+[2026-02-18 10:46:12]     Iteration 1/3...
+[2026-02-18 10:51:20]       TIMED OUT after 300s -- skipping remaining iterations
+[2026-02-18 10:51:20]     TIMEOUT: prompt length 15000 exceeded 300s -- skipping longer prompts too
+[2026-02-18 10:51:20]   Skipping ~20000 tokens (would be even slower)
+[2026-02-18 10:51:20]   Skipping ~25000 tokens (would be even slower)
+[2026-02-18 10:51:20]   Skipping ~30000 tokens (would be even slower)
+[2026-02-18 10:51:20] Stopping llama-server ...
+[2026-02-18 10:51:21] Ensuring llama-server is stopped before Foundry Local tests...
+[2026-02-18 10:51:21]   Killing any remaining llama-server processes...
+[2026-02-18 10:51:25] 
+[2026-02-18 10:51:26] 
+[2026-02-18 10:51:26] ======================================================================
+[2026-02-18 10:51:26]   Starting Foundry Local service
+[2026-02-18 10:51:26] ======================================================================
+[2026-02-18 10:51:42] Foundry Local endpoint: http://127.0.0.1:16688/v1
+[2026-02-18 10:51:42] 
+[2026-02-18 10:51:42] ======================================================================
+[2026-02-18 10:51:42]   Phi-3.5-mini (Foundry Local)
+[2026-02-18 10:51:42] ======================================================================
+[2026-02-18 10:51:42] Downloading model 'phi-3.5-mini'...
+[2026-02-18 10:51:44] Loading model 'phi-3.5-mini'...
+[2026-02-18 10:51:58] Model loaded as: Phi-3.5-mini-instruct-openvino-gpu:1
+[2026-02-18 10:51:58]   Prompt length target: ~1000 tokens (4000 chars)
+[2026-02-18 10:51:58]     Iteration 1/3...
+[2026-02-18 10:52:13]       TTFT: 3.605s | Throughput: 13.1 t/s | Tokens: 199
+[2026-02-18 10:52:13]       --- Response (Phi-3.5-mini (Foundry Local), ~1000 tokens) ---
+[2026-02-18 10:52:13]       |  The document outlines the principles and structure of the United States Constitution, establishing a government designed to promote justice, ensure tranquility, provide defense, and secure liberty. It mandates a bicameral Congress, with a House of Representatives elected by the people, and a Senate composed of two senators from each state chosen by state legislatures.
+[2026-02-18 10:52:13]       | 
+[2026-02-18 10:52:13]       | Key points include:
+[2026-02-18 10:52:13]       | 
+[2026-02-18 10:52:13]       | 1. Representation in the House is based on state population, with a cap of one representative per thirty thousand free persons, and each state must have at least one representative.
+[2026-02-18 10:52:13]       | 2. Senators serve six-year terms, with one-third of the Senate's seats up for election every two years.
+[2026-02-18 10:52:13]       | 3. Impeachment trials are exclusively within the Senate, and the Vice President presides over the Senate but only votes to break ties.
+[2026-02-18 10:52:13]       | 
+[2026-02-18 10:52:13]       | The document also addresses the apportionment of Representatives based on population, including enslaved individuals as three
+[2026-02-18 10:52:13]       --- End response ---
+[2026-02-18 10:52:13]     Iteration 2/3...
+[2026-02-18 10:52:28]       TTFT: 3.563s | Throughput: 13.4 t/s | Tokens: 199
+[2026-02-18 10:52:28]     Iteration 3/3...
+[2026-02-18 10:52:43]       TTFT: 3.527s | Throughput: 13.4 t/s | Tokens: 199
+[2026-02-18 10:52:43]     Summary: TTFT avg=3.565s, min=3.527s, max=3.605s
+[2026-02-18 10:52:43]   Prompt length target: ~2000 tokens (8000 chars)
+[2026-02-18 10:52:43]     Iteration 1/3...
+[2026-02-18 10:53:04]       TTFT: 8.293s | Throughput: 9.6 t/s | Tokens: 199
+[2026-02-18 10:53:04]       --- Response (Phi-3.5-mini (Foundry Local), ~2000 tokens) ---
+[2026-02-18 10:53:04]       |  The U.S. Constitution establishes a federal government composed of a Congress (divided into the Senate and House of Representatives) and a separate executive branch led by the President.
+[2026-02-18 10:53:04]       | 
+[2026-02-18 10:53:04]       | Congress is made up of two senators from each state, chosen by state legislatures, serving six-year terms, with one-third of the seats up for election every two years. Representatives serve two-year terms and must be at least 25 years old, U.S. citizens for seven years, and state residents.
+[2026-02-18 10:53:04]       | 
+[2026-02-18 10:53:04]       | The Senate has the sole power to try impeachment cases, with a two-thirds majority required for conviction. The President of the Senate is the Vice President of the United States, but they do not vote unless there's a tie.
+[2026-02-18 10:53:04]       | 
+[2026-02-18 10:53:04]       | The House of Representatives has the sole power to impeach, with a majority vote required for conviction.
+[2026-02-18 10:53:04]       | 
+[2026-02-18 10:53:04]       | Both houses have the power to self-regulate,
+[2026-02-18 10:53:04]       --- End response ---
+[2026-02-18 10:53:04]     Iteration 2/3...
+[2026-02-18 10:53:27]       TTFT: 8.434s | Throughput: 8.5 t/s | Tokens: 199
+[2026-02-18 10:53:27]     Iteration 3/3...
+[2026-02-18 10:54:43]       TTFT: 12.630s | Throughput: 2.6 t/s | Tokens: 199
+[2026-02-18 10:54:43]     Summary: TTFT avg=9.786s, min=8.293s, max=12.630s
+[2026-02-18 10:54:43]   Prompt length target: ~5000 tokens (20000 chars)
+[2026-02-18 10:54:43]     Iteration 1/3...
+[2026-02-18 10:55:26]       TTFT: 27.713s | Throughput: 4.6 t/s | Tokens: 199
+[2026-02-18 10:55:26]       --- Response (Phi-3.5-mini (Foundry Local), ~5000 tokens) ---
+[2026-02-18 10:55:26]       |  to, to the to convening of the to the to.
+[2026-02-18 10:55:26]       | elect to the to.
+[2026-02-18 10:55:26]       | ing to. to conven.
+[2026-02-18 10:55:26]       | M to.
+[2026-02-18 10:55:26]       | Constitution, in, to the to.
+[2026-02-18 10:55:26]       | 
+[2026-02-18 10:55:26]       | 
+[2026-02-18 10:55:26]       | 
+[2026-02-18 10:55:26]       | 
+[2026-02-18 10:55:26]       | 
+[2026-02-18 10:55:26]       | 
+[2026-02-18 10:55:26]       |  to convening.
+[2026-02-18 10:55:26]       | 
+[2026-02-18 10:55:26]       | 
+[2026-02-18 10:55:26]       | 
+[2026-02-18 10:55:26]       |  of
+[2026-02-18 10:55:26]       | 
+[2026-02-18 10:55:26]       | 
+[2026-02-18 10:55:26]       |  of
+[2026-02-18 10:55:26]       | to
+[2026-02-18 10:55:26]       | 
+[2026-02-18 10:55:26]       |  to
+[2026-02-18 10:55:26]       | 
+[2026-02-18 10:55:26]       | 
+[2026-02-18 10:55:26]       |  to.
+[2026-02-18 10:55:26]       |  to.
+[2026-02-18 10:55:26]       |  to.
+[2026-02-18 10:55:26]       |  to. The to. The document to convened to.
+[2026-02-18 10:55:26]       | 
+[2026-02-18 10:55:26]       | 
+[2026-02-18 10:55:26]       |  to
+[2026-02-18 10:55:26]       | 
+[2026-02-18 10:55:26]       |  to.
+[2026-02-18 10:55:26]       |  to.
+[2026-02-18 10:55:26]       | stand to. of the to elect to elect to. The. The.
+[2026-02-18 10:55:26]       | to be to elect:ment, to elect: -, and - -ly to elect, to elect, to-ly: to elect, to elect.
+[2026-02-18 10:55:26]       |  to, for, for, elect: elect: (vote to elect, to vote to elect.
+[2026-02-18 10:55:26]       | .
+[2026-02-18 10:55:26]       | , to participate, elect, to elect,er, to vote,or, to elect:standing: Stand, to be
+[2026-02-18 10:55:26]       --- End response ---
+[2026-02-18 10:55:26]     Iteration 2/3...
+[2026-02-18 10:56:14]       TTFT: 31.082s | Throughput: 4.2 t/s | Tokens: 199
+[2026-02-18 10:56:14]     Iteration 3/3...
+[2026-02-18 10:57:04]       TTFT: 32.195s | Throughput: 4.0 t/s | Tokens: 199
+[2026-02-18 10:57:04]     Summary: TTFT avg=30.330s, min=27.713s, max=32.195s
+[2026-02-18 10:57:04]   Prompt length target: ~10000 tokens (40000 chars)
+[2026-02-18 10:57:04]     Iteration 1/3...
+[2026-02-18 10:59:05]       TTFT: 97.172s | Throughput: 1.6 t/s | Tokens: 199
+[2026-02-18 10:59:05]       --- Response (Phi-3.5-mini (Foundry Local), ~10000 tokens) ---
+[2026-02-18 10:59:05]       | :None:None:None:ofles:ofles:of of of of of of of of of ofeEeouseouseess,and,and,and,andlesude,
+[2026-02-18 10:59:05]       | ers,
+[2026-02-18 10:59:05]       | toliessessessessessessess,Wususususus,and,and,and,and,
+[2026-02-18 10:59:05]       | .N,
+[2026-02-18 10:59:05]       | .No.
+[2026-02-18 10:59:05]       | toess.
+[2026-02-18 10:59:05]       | toess,Eues:Orive,as,as,as,as,as:of:of:of:orampududududududud,o,o,o,E:E:E:E:Eennise:
+[2026-02-18 10:59:05]       | nise:Pording:Pording:Pording:inish.inish.inise.inise.inise.in:
+[2026-02-18 10:59:05]       | 
+[2026-02-18 10:59:05]       | 
+[2026-02-18 10:59:05]       | 
+[2026-02-18 10:59:05]       | 
+[2026-02-18 10:59:05]       | 
+[2026-02-18 10:59:05]       | 									ofofofofofofof:of:of:of
+[2026-02-18 10:59:05]       --- End response ---
+[2026-02-18 10:59:05]     Iteration 2/3...
+[2026-02-18 11:01:14]       TTFT: 104.216s | Throughput: 1.5 t/s | Tokens: 199
+[2026-02-18 11:01:14]     Iteration 3/3...
+[2026-02-18 11:03:20]       TTFT: 102.988s | Throughput: 1.6 t/s | Tokens: 199
+[2026-02-18 11:03:20]     Summary: TTFT avg=101.458s, min=97.172s, max=104.216s
+[2026-02-18 11:03:20]   Prompt length target: ~15000 tokens (60000 chars)
+[2026-02-18 11:03:20]     Iteration 1/3...
+[2026-02-18 11:13:21]       ERROR: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-02-18 11:13:21]     Iteration 2/3...
+[2026-02-18 11:13:29]       ERROR: Connection error.
+[2026-02-18 11:13:29]     Iteration 3/3...
+[2026-02-18 11:13:36]       ERROR: Connection error.
+[2026-02-18 11:13:36]   Prompt length target: ~20000 tokens (80000 chars)
+[2026-02-18 11:13:36]     Iteration 1/3...
+[2026-02-18 11:13:44]       ERROR: Connection error.
+[2026-02-18 11:13:44]     Iteration 2/3...
+[2026-02-18 11:13:51]       ERROR: Connection error.
+[2026-02-18 11:13:51]     Iteration 3/3...
+[2026-02-18 11:13:58]       ERROR: Connection error.
+[2026-02-18 11:13:58]   Prompt length target: ~25000 tokens (100000 chars)
+[2026-02-18 11:13:58]     Iteration 1/3...
+[2026-02-18 11:14:06]       ERROR: Connection error.
+[2026-02-18 11:14:06]     Iteration 2/3...
+[2026-02-18 11:14:13]       ERROR: Connection error.
+[2026-02-18 11:14:13]     Iteration 3/3...
+[2026-02-18 11:14:21]       ERROR: Connection error.
+[2026-02-18 11:14:21]   Prompt length target: ~30000 tokens (120000 chars)
+[2026-02-18 11:14:21]     Iteration 1/3...
+[2026-02-18 11:14:28]       ERROR: Connection error.
+[2026-02-18 11:14:28]     Iteration 2/3...
+[2026-02-18 11:14:35]       ERROR: Connection error.
+[2026-02-18 11:14:35]     Iteration 3/3...
+[2026-02-18 11:14:43]       ERROR: Connection error.
+[2026-02-18 11:14:43] 
+[2026-02-18 11:14:43] ======================================================================
+[2026-02-18 11:14:43]   Qwen2.5-1.5B (Foundry Local)
+[2026-02-18 11:14:43] ======================================================================
+[2026-02-18 11:14:43] Downloading model 'qwen2.5-1.5b'...
+[2026-02-18 11:14:45]   ERROR running Qwen2.5-1.5B (Foundry Local): Could not connect to Foundry Local! Please check if the Foundry Local service is running and the host URL is correct.
+[2026-02-18 11:14:45] Traceback (most recent call last):
+  File "c:\Users\nakersha\Develop\tests\ttft\model-performance-tests\run_ttft_benchmark.py", line 699, in main
+    manager.download_model(alias)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\nakersha\Develop\tests\ttft\.venv\Lib\site-packages\foundry_local\api.py", line 313, in download_model
+    if model_info in self.list_cached_models() and not force:
+                     ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nakersha\Develop\tests\ttft\.venv\Lib\site-packages\foundry_local\api.py", line 291, in list_cached_models
+    return self._fetch_model_infos(self.httpx_client.get("/openai/models"))
+                                   ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nakersha\Develop\tests\ttft\.venv\Lib\site-packages\foundry_local\client.py", line 79, in get
+    response = self._request("GET", path, params=query_params)
+  File "C:\Users\nakersha\Develop\tests\ttft\.venv\Lib\site-packages\foundry_local\client.py", line 62, in _request
+    raise ConnectionError(
+    ...<2 lines>...
+    ) from None
+ConnectionError: Could not connect to Foundry Local! Please check if the Foundry Local service is running and the host URL is correct.
+
+[2026-02-18 11:14:45] Raw data saved to c:\Users\nakersha\Develop\tests\ttft\model-performance-tests\results\ttft_constit_windows\ttft_data.json
+[2026-02-18 11:14:46] System metadata saved to c:\Users\nakersha\Develop\tests\ttft\model-performance-tests\results\ttft_constit_windows\system_info.json
+[2026-02-18 11:14:50] WARNING: Chart generation failed: the resolved dtypes are not compatible with add.reduce. Resolved (dtype('<U7'), dtype('<U7'), dtype('<U14'))
+[2026-02-18 11:14:50] 
+[2026-02-18 11:14:50] Test run complete.
+[2026-02-18 11:18:06] 
+[2026-02-18 11:18:06] ======================================================================
+[2026-02-18 11:18:06]   Re-run: Qwen2.5-1.5B (Foundry Local)
+[2026-02-18 11:18:06] ======================================================================
+[2026-02-18 11:18:06] Loaded existing data: ['Phi-3.5-mini Q4 (llama.cpp)', 'Qwen2.5-1.5B Q4 (llama.cpp)', 'Phi-3.5-mini (Foundry Local)']
+[2026-02-18 11:18:06] Document: 44193 chars (~11048 tokens)
+[2026-02-18 11:18:07] Starting Foundry Local service...
+[2026-02-18 11:18:23] Foundry Local endpoint: http://127.0.0.1:16688/v1
+[2026-02-18 11:18:23] Health check attempt 1 failed: HTTP Error 404: Not Found
+[2026-02-18 11:18:26] Health check attempt 2 failed: HTTP Error 404: Not Found
+[2026-02-18 11:18:29] Health check attempt 3 failed: HTTP Error 404: Not Found
+[2026-02-18 11:18:32] Health check attempt 4 failed: HTTP Error 404: Not Found
+[2026-02-18 11:18:35] Health check attempt 5 failed: HTTP Error 404: Not Found
+[2026-02-18 11:18:38] ERROR: Foundry Local not healthy after 5 attempts
+[2026-02-18 11:19:22] 
+[2026-02-18 11:19:22] ======================================================================
+[2026-02-18 11:19:22]   Re-run: Qwen2.5-1.5B (Foundry Local)
+[2026-02-18 11:19:22] ======================================================================
+[2026-02-18 11:19:22] Loaded existing data: ['Phi-3.5-mini Q4 (llama.cpp)', 'Qwen2.5-1.5B Q4 (llama.cpp)', 'Phi-3.5-mini (Foundry Local)']
+[2026-02-18 11:19:22] Document: 44193 chars (~11048 tokens)
+[2026-02-18 11:19:22] Starting Foundry Local service...
+[2026-02-18 11:19:25] Foundry Local endpoint: http://127.0.0.1:16688/v1
+[2026-02-18 11:19:25] Foundry Local is responsive (attempt 1)
+[2026-02-18 11:19:25] Downloading model 'qwen2.5-1.5b'...
+[2026-02-18 11:19:26] Loading model 'qwen2.5-1.5b'...
+[2026-02-18 11:19:38] Model loaded as: qwen2.5-1.5b-instruct-openvino-gpu:2
+[2026-02-18 11:19:38]   Prompt length target: ~1000 tokens (4000 chars)
+[2026-02-18 11:19:38]     Iteration 1/3...
+[2026-02-18 11:19:43]       TTFT: 2.511s | Throughput: 10.4 t/s | Tokens: 48
+[2026-02-18 11:19:43]       --- Response (Qwen2.5-1.5B (Foundry Local), ~1000 tokens) ---
+[2026-02-18 11:19:43]       | The Constitution of the United States was adopted by the Constitutional Convention. It establishes the legislative branch of the government, including the House of Representatives and the Senate. It also outlines the qualifications for members of Congress and the process for electing representatives.
+[2026-02-18 11:19:43]       --- End response ---
+[2026-02-18 11:19:43]     Iteration 2/3...
+[2026-02-18 11:19:47]       TTFT: 1.470s | Throughput: 16.6 t/s | Tokens: 73
+[2026-02-18 11:19:47]     Iteration 3/3...
+[2026-02-18 11:19:52]       TTFT: 1.398s | Throughput: 16.6 t/s | Tokens: 73
+[2026-02-18 11:19:52]     Summary: TTFT avg=1.793s, min=1.398s, max=2.511s
+[2026-02-18 11:19:52]   Prompt length target: ~2000 tokens (8000 chars)
+[2026-02-18 11:19:52]     Iteration 1/3...
+[2026-02-18 11:19:59]       TTFT: 2.726s | Throughput: 14.9 t/s | Tokens: 112
+[2026-02-18 11:19:59]       --- Response (Qwen2.5-1.5B (Foundry Local), ~2000 tokens) ---
+[2026-02-18 11:19:59]       | The Constitution of the United States outlines the structure and powers of the federal government. It establishes a bicameral legislature with a Senate and House of Representatives. The House is elected by the people of each state, while the Senate is chosen by the state legislatures. The Senate has two Senators from each state, chosen by the state legislatures, and a President who is elected by the Electoral College. The Constitution also outlines the rights and duties of the members of Congress, including the right to vote and the right to be free from certain types of criminal prosecution.
+[2026-02-18 11:19:59]       --- End response ---
+[2026-02-18 11:19:59]     Iteration 2/3...
+[2026-02-18 11:20:06]       TTFT: 2.862s | Throughput: 13.3 t/s | Tokens: 90
+[2026-02-18 11:20:06]     Iteration 3/3...
+[2026-02-18 11:20:13]       TTFT: 2.884s | Throughput: 13.6 t/s | Tokens: 90
+[2026-02-18 11:20:13]     Summary: TTFT avg=2.824s, min=2.726s, max=2.884s
+[2026-02-18 11:20:13]   Prompt length target: ~5000 tokens (20000 chars)
+[2026-02-18 11:20:13]     Iteration 1/3...
+[2026-02-18 11:20:25]       TTFT: 8.520s | Throughput: 6.8 t/s | Tokens: 81
+[2026-02-18 11:20:25]       --- Response (Qwen2.5-1.5B (Foundry Local), ~5000 tokens) ---
+[2026-02-18 11:20:25]       | The Constitution of the United States outlines the powers and duties of the government, including the legislative, executive, and judicial branches. It establishes the structure of the government, including the number of representatives and senators, the qualifications for election, and the process for impeaching officials. It also outlines the powers of the president, vice president, and civil officers, including the ability to remove them from office on impeachment.
+[2026-02-18 11:20:25]       --- End response ---
+[2026-02-18 11:20:25]     Iteration 2/3...
+[2026-02-18 11:20:37]       TTFT: 8.594s | Throughput: 6.7 t/s | Tokens: 81
+[2026-02-18 11:20:37]     Iteration 3/3...
+[2026-02-18 11:20:49]       TTFT: 8.855s | Throughput: 6.6 t/s | Tokens: 81
+[2026-02-18 11:20:49]     Summary: TTFT avg=8.656s, min=8.520s, max=8.855s
+[2026-02-18 11:20:49]   Prompt length target: ~10000 tokens (40000 chars)
+[2026-02-18 11:20:49]     Iteration 1/3...
+[2026-02-18 11:21:14]       TTFT: 21.162s | Throughput: 3.2 t/s | Tokens: 82
+[2026-02-18 11:21:14]       --- Response (Qwen2.5-1.5B (Foundry Local), ~10000 tokens) ---
+[2026-02-18 11:21:14]       | The Constitution of the United States outlines the powers and duties of Congress, including the right to tax, regulate commerce, coin money, and establish post offices. It also establishes the rights and disabilities of members of Congress, including the right to vote and the right to be free from certain types of laws. The Constitution also outlines the powers of the President, including the power to appoint civil officers and to make treaties.
+[2026-02-18 11:21:14]       --- End response ---
+[2026-02-18 11:21:14]     Iteration 2/3...
+[2026-02-18 11:21:41]       TTFT: 22.846s | Throughput: 3.1 t/s | Tokens: 83
+[2026-02-18 11:21:41]     Iteration 3/3...
+[2026-02-18 11:22:10]       TTFT: 24.460s | Throughput: 2.9 t/s | Tokens: 83
+[2026-02-18 11:22:10]     Summary: TTFT avg=22.823s, min=21.162s, max=24.460s
+[2026-02-18 11:22:10]   Prompt length target: ~15000 tokens (60000 chars)
+[2026-02-18 11:22:10]     Iteration 1/3...
+[2026-02-18 11:23:06]       TTFT: 48.328s | Throughput: 2.4 t/s | Tokens: 135
+[2026-02-18 11:23:06]       --- Response (Qwen2.5-1.5B (Foundry Local), ~15000 tokens) ---
+[2026-02-18 11:23:06]       | The Constitution of the United States outlines the powers and duties of Congress, the legislative branch of the government. It includes provisions for elections, representation, taxation, and the regulation of commerce among the states. The Constitution also establishes the powers of the President and the Vice President, and outlines the rights and duties of citizens. Article I of the Constitution establishes Congress, including the Senate and House of Representatives. Article II establishes the executive branch, with the President and Vice President. Article III establishes the judicial branch, with the Supreme Court and lower courts. The Constitution also includes amendments that address issues such as the right to vote, the right to bear arms, and the right to privacy.
+[2026-02-18 11:23:06]       --- End response ---
+[2026-02-18 11:23:06]     Iteration 2/3...
+[2026-02-18 11:24:03]       TTFT: 46.353s | Throughput: 3.5 t/s | Tokens: 199
+[2026-02-18 11:24:03]     Iteration 3/3...
+[2026-02-18 11:27:28]       TTFT: 51.689s | Throughput: 1.0 t/s | Tokens: 199
+[2026-02-18 11:27:28]     Summary: TTFT avg=48.790s, min=46.353s, max=51.689s
+[2026-02-18 11:27:28]   Prompt length target: ~20000 tokens (80000 chars)
+[2026-02-18 11:27:28]     Iteration 1/3...
+[2026-02-18 11:28:42]       TTFT: 67.264s | Throughput: 1.4 t/s | Tokens: 105
+[2026-02-18 11:28:42]       --- Response (Qwen2.5-1.5B (Foundry Local), ~20000 tokens) ---
+[2026-02-18 11:28:42]       | The document outlines the Constitution of the United States, including its structure, powers, and limitations. It covers the roles of Congress, the President, and the Senate, as well as the rights and responsibilities of citizens and states. Key points include the establishment of a two-term limit for the President, the prohibition of slavery and involuntary servitude, and the right to bear arms. The document also outlines the powers of Congress, the President, and the states, including the right to regulate commerce, coin money, and declare war.
+[2026-02-18 11:28:42]       --- End response ---
+[2026-02-18 11:28:42]     Iteration 2/3...
+[2026-02-18 11:30:06]       TTFT: 71.975s | Throughput: 2.4 t/s | Tokens: 199
+[2026-02-18 11:30:06]     Iteration 3/3...
+[2026-02-18 11:31:37]       TTFT: 79.416s | Throughput: 2.2 t/s | Tokens: 199
+[2026-02-18 11:31:37]     Summary: TTFT avg=72.885s, min=67.264s, max=79.416s
+[2026-02-18 11:31:37]   Prompt length target: ~25000 tokens (100000 chars)
+[2026-02-18 11:31:37]     Iteration 1/3...
+[2026-02-18 11:33:45]       TTFT: 117.092s | Throughput: 1.2 t/s | Tokens: 157
+[2026-02-18 11:33:45]       --- Response (Qwen2.5-1.5B (Foundry Local), ~25000 tokens) ---
+[2026-02-18 11:33:45]       | The Constitution of the United States outlines the powers and responsibilities of the federal government, including the legislative branch, which consists of the House of Representatives and the Senate. The Constitution also establishes the rights and duties of citizens, including the right to vote and the protection against certain types of laws and taxes. Article I of the Constitution outlines the structure of the legislative branch, including the powers and duties of the House of Representatives and the Senate. Article II outlines the powers and duties of the President, including the right to veto legislation and the power to appoint civil officers. Article III outlines the powers and duties of the judiciary, including the right to try impeachment cases and the power to declare war. The Constitution also includes amendments that further define the rights and responsibilities of citizens and the powers of the government.
+[2026-02-18 11:33:45]       --- End response ---
+[2026-02-18 11:33:45]     Iteration 2/3...
+[2026-02-18 11:36:04]       TTFT: 125.697s | Throughput: 1.4 t/s | Tokens: 199
+[2026-02-18 11:36:04]     Iteration 3/3...
+[2026-02-18 11:39:14]       TTFT: 176.317s | Throughput: 1.0 t/s | Tokens: 199
+[2026-02-18 11:39:14]     Summary: TTFT avg=139.702s, min=117.092s, max=176.317s
+[2026-02-18 11:39:14]   Prompt length target: ~30000 tokens (120000 chars)
+[2026-02-18 11:39:14]     Iteration 1/3...
+[2026-02-18 11:42:23]       TTFT: 173.022s | Throughput: 0.4 t/s | Tokens: 83
+[2026-02-18 11:42:23]       --- Response (Qwen2.5-1.5B (Foundry Local), ~30000 tokens) ---
+[2026-02-18 11:42:23]       | The document outlines the key provisions of the United States Constitution, including the powers of Congress, the rights of citizens, and the powers denied to the states. It also details the process for electing the President and Vice President, as well as the rights of citizens to vote and keep and bear arms. The document also outlines the powers of Congress, including the power to regulate commerce, coin money, and declare war.
+[2026-02-18 11:42:23]       --- End response ---
+[2026-02-18 11:42:23]     Iteration 2/3...
+[2026-02-18 11:45:30]       TTFT: 181.379s | Throughput: 0.3 t/s | Tokens: 51
+[2026-02-18 11:45:30]     Iteration 3/3...
+[2026-02-18 11:54:00]       TTFT: 502.890s | Throughput: 0.1 t/s | Tokens: 51
+[2026-02-18 11:54:00]     Summary: TTFT avg=285.764s, min=173.022s, max=502.890s
+[2026-02-18 11:54:00] Merged data saved to c:\Users\nakersha\Develop\tests\ttft\model-performance-tests\results\ttft_constit_windows\ttft_data.json
+[2026-02-18 11:54:00] Series in file: ['Phi-3.5-mini Q4 (llama.cpp)', 'Qwen2.5-1.5B Q4 (llama.cpp)', 'Phi-3.5-mini (Foundry Local)', 'Qwen2.5-1.5B (Foundry Local)']
+[2026-02-18 11:54:00] Re-run complete.

@@ -1,0 +1,22 @@
+{
+  "platform": "Windows-11-10.0.26567-SP0",
+  "machine": "AMD64",
+  "processor": "Intel64 Family 6 Model 154 Stepping 4, GenuineIntel",
+  "hostname": "trixie",
+  "python": "3.14.0 (tags/v3.14.0:ebf955d, Oct  7 2025, 10:15:03) [MSC v.1944 64 bit (AMD64)]",
+  "gpu": "Intel(R) Iris(R) Xe Graphics",
+  "ram": "32 GB",
+  "date": "2026-02-18T11:14:46.466764",
+  "prompt_lengths": [
+    1000,
+    2000,
+    5000,
+    10000,
+    15000,
+    20000,
+    25000,
+    30000
+  ],
+  "num_iterations": 3,
+  "max_tokens": 200
+}

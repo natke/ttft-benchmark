@@ -1,0 +1,541 @@
+[2026-02-07 13:02:17] TTFT Constitution Document Test
+[2026-02-07 13:02:17] Platform: macOS-15.7.3-arm64-arm-64bit
+[2026-02-07 13:02:17] Machine: arm64
+[2026-02-07 13:02:17] Python: 3.11.9 (v3.11.9:de54cf5be3, Apr  2 2024, 07:12:50) [Clang 13.0.0 (clang-1300.0.29.30)]
+[2026-02-07 13:02:17] Prompt file: /Users/natke/Documents/Adobe/model-performance-tests/prompts/constit.txt
+[2026-02-07 13:02:17] Prompt lengths: [1000, 2000, 5000, 10000, 15000, 20000, 30000]
+[2026-02-07 13:02:17] Iterations: 3
+[2026-02-07 13:02:17] Max tokens: 200
+[2026-02-07 13:02:17] 
+[2026-02-07 13:02:17] Document loaded: 44193 chars (~11048 tokens)
+[2026-02-07 13:02:17] 
+[2026-02-07 13:02:17] 
+[2026-02-07 13:02:17] ======================================================================
+[2026-02-07 13:02:17]   Phi-3.5-mini Q4 (llama.cpp)
+[2026-02-07 13:02:17] ======================================================================
+[2026-02-07 13:02:17] CMD: llama-server --host 0.0.0.0 --port 8080 --model /Users/natke/Documents/Adobe/model-performance-tests/models/Phi-3.5-mini-instruct-Q4_K_M.gguf -ngl 99 -c 32768 --no-cache-prompt
+[2026-02-07 13:02:19] llama-server ready.
+[2026-02-07 13:02:19]   Prompt length target: ~1000 tokens (4000 chars)
+[2026-02-07 13:02:19]     Iteration 1/3...
+[2026-02-07 13:02:24]       TTFT: 2.543s | Throughput: 37.4 t/s | Tokens: 200
+[2026-02-07 13:02:24]       --- Model response (Phi-3.5-mini Q4 (llama.cpp), ~1000 tokens) ---
+[2026-02-07 13:02:24]       | Summary:
+[2026-02-07 13:02:24]       | The U.S. Constitution establishes a Congress with a bicameral legislature, consisting of the Senate and the House of Representatives. The House members are elected every two years by the people and must meet age and residency requirements. Representation in the House is apportioned based on state population, with a cap of one representative per thirty thousand people and a minimum of one per state. New Hampshire is assigned three representatives until the first census. The Senate comprises two senators from each state, elected for six years, with one-third of the seats rotating every two years. Senators must be at least thirty years old and nine years a U.S. citizen. The Vice President presides over the Senate but has a limited vote. The Senate has the exclusive power to conduct impeachment trials.
+[2026-02-07 13:02:24]       | 
+[2026-02-07 13:02:24]       | Key points:
+[2026-02-07 13:02:24]       | 1. The Constitution grants all legislative powers to a bicameral Congress (H
+[2026-02-07 13:02:24]       --- End response ---
+[2026-02-07 13:02:24]     Iteration 2/3...
+[2026-02-07 13:02:28]       TTFT: 1.181s | Throughput: 49.0 t/s | Tokens: 200
+[2026-02-07 13:02:28]     Iteration 3/3...
+[2026-02-07 13:02:32]       TTFT: 1.182s | Throughput: 49.1 t/s | Tokens: 200
+[2026-02-07 13:02:32]     Summary: TTFT avg=1.635s, min=1.181s, max=2.543s
+[2026-02-07 13:02:32]   Prompt length target: ~2000 tokens (8000 chars)
+[2026-02-07 13:02:32]     Iteration 1/3...
+[2026-02-07 13:02:38]       TTFT: 2.444s | Throughput: 35.4 t/s | Tokens: 200
+[2026-02-07 13:02:38]       --- Model response (Phi-3.5-mini Q4 (llama.cpp), ~2000 tokens) ---
+[2026-02-07 13:02:38]       | Key points from the U.S. Constitution excerpt:
+[2026-02-07 13:02:38]       | 
+[2026-02-07 13:02:38]       | 1. The Constitution was established to form a more perfect Union, ensure justice, provide for defense, promote the general welfare, and secure liberty for Americans and future generations.
+[2026-02-07 13:02:38]       | 2. Congress, consisting of the Senate and House of Representatives, holds all legislative powers.
+[2026-02-07 13:02:38]       | 3. The House of Representatives has members chosen every two years by the people from various states, with specific age and citizenship requirements, and apportioned based on state population.
+[2026-02-07 13:02:38]       | 4. Senators are chosen by state legislatures for six-year terms, with qualifications including a minimum age of thirty and at least nine years of U.S. citizenship, with vacancies filled by state executives.
+[2026-02-07 13:02:38]       | 5. The Senate has the sole power to try impeachments, with a two-thirds majority needed for conviction, which results in removal from office but not criminal punishment.
+[2026-02-07 13:02:38]       | 6
+[2026-02-07 13:02:38]       --- End response ---
+[2026-02-07 13:02:38]     Iteration 2/3...
+[2026-02-07 13:02:44]       TTFT: 2.439s | Throughput: 36.1 t/s | Tokens: 200
+[2026-02-07 13:02:44]     Iteration 3/3...
+[2026-02-07 13:02:49]       TTFT: 2.477s | Throughput: 35.3 t/s | Tokens: 200
+[2026-02-07 13:02:49]     Summary: TTFT avg=2.453s, min=2.439s, max=2.477s
+[2026-02-07 13:02:49]   Prompt length target: ~5000 tokens (20000 chars)
+[2026-02-07 13:02:49]     Iteration 1/3...
+[2026-02-07 13:03:01]       TTFT: 7.188s | Throughput: 17.6 t/s | Tokens: 200
+[2026-02-07 13:03:01]       --- Model response (Phi-3.5-mini Q4 (llama.cpp), ~5000 tokens) ---
+[2026-02-07 13:03:01]       | The U.S. Constitution establishes a government with three branches: legislative, executive, and judicial.
+[2026-02-07 13:03:01]       | 
+[2026-02-07 13:03:01]       | The legislative branch, Congress, is bicameral, consisting of the House of Representatives and the Senate, with specific rules for electing members, apportioning representation, and conducting elections.
+[2026-02-07 13:03:01]       | 
+[2026-02-07 13:03:01]       | The executive branch is headed by the President, who is elected by electors chosen by the states. The President has powers including military command, treaty-making, appointing officials, and ensuring laws are executed.
+[2026-02-07 13:03:01]       | 
+[2026-02-07 13:03:01]       | The judicial branch is led by the Supreme Court, with Congress having the authority to establish lower courts. Judges serve for life, unless impeached for certain offenses.
+[2026-02-07 13:03:01]       | 
+[2026-02-07 13:03:01]       | The Constitution also outlines the process for impeachment and removal from office, the President's role in the legislative process, and specific prohibitions on states regarding treaties, coinage, and titles of nobility.
+[2026-02-07 13:03:01]       --- End response ---
+[2026-02-07 13:03:01]     Iteration 2/3...
+[2026-02-07 13:03:12]       TTFT: 7.472s | Throughput: 17.2 t/s | Tokens: 200
+[2026-02-07 13:03:12]     Iteration 3/3...
+[2026-02-07 13:03:24]       TTFT: 7.522s | Throughput: 17.1 t/s | Tokens: 200
+[2026-02-07 13:03:24]     Summary: TTFT avg=7.394s, min=7.188s, max=7.522s
+[2026-02-07 13:03:24]   Prompt length target: ~10000 tokens (40000 chars)
+[2026-02-07 13:03:24]     Iteration 1/3...
+[2026-02-07 13:03:46]       TTFT: 17.075s | Throughput: 7.5 t/s | Tokens: 166
+[2026-02-07 13:03:46]       --- Model response (Phi-3.5-mini Q4 (llama.cpp), ~10000 tokens) ---
+[2026-02-07 13:03:46]       | The Constitution of the United States establishes a federal government with distinct legislative, executive, and judicial branches. Congress, composed of the Senate and the House of Representatives, holds legislative power, with specific rules on representation and term limits. The President, elected by Electors appointed by states, serves a four-year term with the power to veto, appointments, and military command. The Supreme Court, along with other federal courts, holds judicial authority. Amendments to the Constitution address a variety of issues including civil rights, voting rights, prohibition, and term limits for the President. The document guarantees state sovereignty, establishes a republican form of government, and ensures individual protections. It also allows for the repeal of amendments through state ratification.
+[2026-02-07 13:03:46]       --- End response ---
+[2026-02-07 13:03:46]     Iteration 2/3...
+[2026-02-07 13:04:09]       TTFT: 16.818s | Throughput: 8.8 t/s | Tokens: 200
+[2026-02-07 13:04:09]     Iteration 3/3...
+[2026-02-07 13:04:31]       TTFT: 16.656s | Throughput: 8.9 t/s | Tokens: 200
+[2026-02-07 13:04:31]     Summary: TTFT avg=16.850s, min=16.656s, max=17.075s
+[2026-02-07 13:04:31]   Prompt length target: ~15000 tokens (60000 chars)
+[2026-02-07 13:04:31]     Iteration 1/3...
+[2026-02-07 13:05:08]       TTFT: 28.907s | Throughput: 5.5 t/s | Tokens: 200
+[2026-02-07 13:05:08]       --- Model response (Phi-3.5-mini Q4 (llama.cpp), ~15000 tokens) ---
+[2026-02-07 13:05:08]       | The U.S. Constitution establishes a government structure with a Congress (bicameral legislature consisting of the Senate and House of Representatives) and an executive branch led by a President. Key points include:
+[2026-02-07 13:05:08]       | 
+[2026-02-07 13:05:08]       | - Congress has powers to tax, regulate commerce, coin money, and establish courts.
+[2026-02-07 13:05:08]       | - Senators and Representatives must meet age and citizenship requirements, with staggered terms to ensure continuity.
+[2026-02-07 13:05:08]       | - The House of Representatives elects the President if no candidate achieves a majority of electoral votes, with states having one vote each in this scenario.
+[2026-02-07 13:05:08]       | - Impeachment is a power vested in Congress, and trials for impeachment must be by Congress's majority vote.
+[2026-02-07 13:05:08]       | - The Constitution cannot be amended by Congress alone but requires state legislatures' approval, with certain amendments demanding a two-thirds majority.
+[2026-02-07 13:05:08]       | - The Bill of Rights (first ten amendments) guarantees fundamental civil libert
+[2026-02-07 13:05:08]       --- End response ---
+[2026-02-07 13:05:08]     Iteration 2/3...
+[2026-02-07 13:05:44]       TTFT: 28.735s | Throughput: 5.5 t/s | Tokens: 200
+[2026-02-07 13:05:44]     Iteration 3/3...
+[2026-02-07 13:06:20]       TTFT: 28.794s | Throughput: 5.5 t/s | Tokens: 200
+[2026-02-07 13:06:20]     Summary: TTFT avg=28.812s, min=28.735s, max=28.907s
+[2026-02-07 13:06:20]   Prompt length target: ~20000 tokens (80000 chars)
+[2026-02-07 13:06:20]     Iteration 1/3...
+[2026-02-07 13:07:14]       TTFT: 44.483s | Throughput: 3.7 t/s | Tokens: 200
+[2026-02-07 13:07:14]       --- Model response (Phi-3.5-mini Q4 (llama.cpp), ~20000 tokens) ---
+[2026-02-07 13:07:14]       | The United States Constitution outlines the framework for the federal government, establishing a system of checks and balances among the legislative, executive, and judicial branches. Key points include:
+[2026-02-07 13:07:14]       | 
+[2026-02-07 13:07:14]       | - Congress, consisting of the Senate and House of Representatives, holds legislative power, with Representatives elected every two years and Senators for six years, each state having at least one.
+[2026-02-07 13:07:14]       | - The House has the exclusive right to originate revenue bills, but the Senate can propose or concur with amendments.
+[2026-02-07 13:07:14]       | - The President serves a four-year term and may be chosen with the Vice President.
+[2026-02-07 13:07:14]       | - The judiciary is vested in one supreme court and inferior courts, with judges holding office during good behavior and receiving compensation not diminished during their tenure.
+[2026-02-07 13:07:14]       | - Amendments can be proposed by Congress or state legislatures, requiring ratification by three-fourths of the states or conventions.
+[2026-02-07 13:07:14]       | - The Bill of Rights
+[2026-02-07 13:07:14]       --- End response ---
+[2026-02-07 13:07:14]     Iteration 2/3...
+[2026-02-07 13:08:09]       TTFT: 44.916s | Throughput: 3.7 t/s | Tokens: 200
+[2026-02-07 13:08:09]     Iteration 3/3...
+[2026-02-07 13:09:02]       TTFT: 43.723s | Throughput: 3.8 t/s | Tokens: 200
+[2026-02-07 13:09:02]     Summary: TTFT avg=44.374s, min=43.723s, max=44.916s
+[2026-02-07 13:09:02]   Prompt length target: ~30000 tokens (120000 chars)
+[2026-02-07 13:09:02]     Iteration 1/3...
+[2026-02-07 13:10:42]       TTFT: 87.545s | Throughput: 2.0 t/s | Tokens: 200
+[2026-02-07 13:10:42]       --- Model response (Phi-3.5-mini Q4 (llama.cpp), ~30000 tokens) ---
+[2026-02-07 13:10:42]       | The key points of the document are:
+[2026-02-07 13:10:42]       | 
+[2026-02-07 13:10:42]       | 1. The U.S. Constitution establishes a government with legislative, executive, and judicial branches, aiming to form a more perfect Union and promote the general welfare and liberty.
+[2026-02-07 13:10:42]       | 2. Congress is comprised of a Senate and House of Representatives, with specific rules regarding their composition, election, and powers.
+[2026-02-07 13:10:42]       | 3. Representatives must be at least 25 years old, U.S. citizens for seven years, and state residents.
+[2026-02-07 13:10:42]       | 4. The Senate consists of two senators from each state, serving six-year terms with staggered elections, and the Vice President presides as President of the Senate.
+[2026-02-07 13:10:42]       | 5. The House of Representatives elects the President if no candidate secures a majority of Electoral Votes.
+[2026-02-07 13:10:42]       | 6. The judiciary, including the Supreme Court, has defined jurisdictions for cases, with the Supreme Court holding original and appellate jurisdiction in
+[2026-02-07 13:10:42]       --- End response ---
+[2026-02-07 13:10:42]     Iteration 2/3...
+[2026-02-07 13:12:22]       TTFT: 86.816s | Throughput: 2.0 t/s | Tokens: 200
+[2026-02-07 13:12:22]     Iteration 3/3...
+[2026-02-07 13:14:05]       TTFT: 89.354s | Throughput: 2.0 t/s | Tokens: 200
+[2026-02-07 13:14:05]     Summary: TTFT avg=87.905s, min=86.816s, max=89.354s
+[2026-02-07 13:14:05] CMD: kill llama-server (SIGTERM)
+[2026-02-07 13:14:05] 
+[2026-02-07 13:14:05] ======================================================================
+[2026-02-07 13:14:05]   Qwen2.5-1.5B Q4 (llama.cpp)
+[2026-02-07 13:14:05] ======================================================================
+[2026-02-07 13:14:05] CMD: llama-server --host 0.0.0.0 --port 8080 --model /Users/natke/Documents/Adobe/model-performance-tests/models/Qwen2.5-1.5B-Instruct-Q4_K_M.gguf -ngl 99 -c 32768 --no-cache-prompt
+[2026-02-07 13:14:06] llama-server ready.
+[2026-02-07 13:14:06]   Prompt length target: ~1000 tokens (4000 chars)
+[2026-02-07 13:14:06]     Iteration 1/3...
+[2026-02-07 13:14:07]       TTFT: 0.429s | Throughput: 84.6 t/s | Tokens: 101
+[2026-02-07 13:14:07]       --- Model response (Qwen2.5-1.5B Q4 (llama.cpp), ~1000 tokens) ---
+[2026-02-07 13:14:07]       | The Constitution of the United States is a document that outlines the structure and powers of the government. It establishes the legislative, executive and judicial branches of the federal government. The legislative branch is made up of the House of Representatives and the Senate. The House of Representatives is composed of Members chosen by the people of the several states and shall have the right to elect the President and the Vice President. The Senate is composed of two Senators from each state and shall have the sole Power to try all impeachments.
+[2026-02-07 13:14:07]       --- End response ---
+[2026-02-07 13:14:07]     Iteration 2/3...
+[2026-02-07 13:14:09]       TTFT: 0.402s | Throughput: 103.1 t/s | Tokens: 200
+[2026-02-07 13:14:09]     Iteration 3/3...
+[2026-02-07 13:14:10]       TTFT: 0.422s | Throughput: 83.7 t/s | Tokens: 101
+[2026-02-07 13:14:10]     Summary: TTFT avg=0.418s, min=0.402s, max=0.429s
+[2026-02-07 13:14:10]   Prompt length target: ~2000 tokens (8000 chars)
+[2026-02-07 13:14:10]     Iteration 1/3...
+[2026-02-07 13:14:12]       TTFT: 0.826s | Throughput: 66.3 t/s | Tokens: 113
+[2026-02-07 13:14:12]       --- Model response (Qwen2.5-1.5B Q4 (llama.cpp), ~2000 tokens) ---
+[2026-02-07 13:14:12]       | The Constitution establishes the legislative branch of the government, with Congress consisting of a Senate and House of Representatives. Members must be 25 years old and have lived in the state for seven years to be eligible. Elections are held every second year and must be held within three years of the first meeting of Congress. Senators serve six-year terms, and representatives serve two-year terms. Members of Congress must be present and take an oath before they can be sworn in. Members of Congress have the power to try impeachments and have the power to remove officials from office.
+[2026-02-07 13:14:12]       --- End response ---
+[2026-02-07 13:14:12]     Iteration 2/3...
+[2026-02-07 13:14:14]       TTFT: 0.825s | Throughput: 76.7 t/s | Tokens: 122
+[2026-02-07 13:14:14]     Iteration 3/3...
+[2026-02-07 13:14:15]       TTFT: 0.839s | Throughput: 64.5 t/s | Tokens: 91
+[2026-02-07 13:14:15]     Summary: TTFT avg=0.830s, min=0.825s, max=0.839s
+[2026-02-07 13:14:15]   Prompt length target: ~5000 tokens (20000 chars)
+[2026-02-07 13:14:15]     Iteration 1/3...
+[2026-02-07 13:14:18]       TTFT: 2.297s | Throughput: 26.4 t/s | Tokens: 77
+[2026-02-07 13:14:18]       --- Model response (Qwen2.5-1.5B Q4 (llama.cpp), ~5000 tokens) ---
+[2026-02-07 13:14:18]       | The Constitution of the United States has three parts: the preamble, the articles, and the amendments. The preamble explains the purpose of the Constitution and outlines the powers and duties of the government. The articles establish the legislative, executive, and judicial branches of government. The amendments expand on the original Constitution and address issues such as slavery, women's rights, and the right to bear arms.
+[2026-02-07 13:14:18]       --- End response ---
+[2026-02-07 13:14:18]     Iteration 2/3...
+[2026-02-07 13:14:21]       TTFT: 2.259s | Throughput: 40.0 t/s | Tokens: 131
+[2026-02-07 13:14:21]     Iteration 3/3...
+[2026-02-07 13:14:25]       TTFT: 2.325s | Throughput: 50.9 t/s | Tokens: 200
+[2026-02-07 13:14:25]     Summary: TTFT avg=2.294s, min=2.259s, max=2.325s
+[2026-02-07 13:14:25]   Prompt length target: ~10000 tokens (40000 chars)
+[2026-02-07 13:14:25]     Iteration 1/3...
+[2026-02-07 13:14:32]       TTFT: 4.993s | Throughput: 29.9 t/s | Tokens: 200
+[2026-02-07 13:14:32]       --- Model response (Qwen2.5-1.5B Q4 (llama.cpp), ~10000 tokens) ---
+[2026-02-07 13:14:32]       | The Constitution of the United States is divided into 7 articles. Article I establishes the legislative branch, including how representatives and direct taxes are apportioned among the states, how the Senate and House of Representatives are elected, and the powers of Congress. Article II establishes the executive branch, including the President's term and powers, and the Vice President's role. Article III establishes the judicial branch, including the Supreme Court, its powers, and how judges are selected. Articles IV and V establish the powers of the states, including the right to keep and bear arms, how disputes between states are resolved, and how new states can be admitted into the Union. Article VI establishes the supremacy of federal laws and treaties over state laws. Article VII establishes the ratification of the Constitution. The 10th Amendment reserves powers not delegated to the federal government to the states or the people. The 20th Amendment changes the terms of office for the President and Vice President. The 21st Amendment
+[2026-02-07 13:14:32]       --- End response ---
+[2026-02-07 13:14:32]     Iteration 2/3...
+[2026-02-07 13:14:39]       TTFT: 5.056s | Throughput: 29.7 t/s | Tokens: 200
+[2026-02-07 13:14:39]     Iteration 3/3...
+[2026-02-07 13:14:45]       TTFT: 5.023s | Throughput: 20.5 t/s | Tokens: 126
+[2026-02-07 13:14:45]     Summary: TTFT avg=5.024s, min=4.993s, max=5.056s
+[2026-02-07 13:14:45]   Prompt length target: ~15000 tokens (60000 chars)
+[2026-02-07 13:14:45]     Iteration 1/3...
+[2026-02-07 13:14:54]       TTFT: 8.374s | Throughput: 10.1 t/s | Tokens: 94
+[2026-02-07 13:14:54]       --- Model response (Qwen2.5-1.5B Q4 (llama.cpp), ~15000 tokens) ---
+[2026-02-07 13:14:54]       | The Constitution of the United States outlines the legislative, executive, and judicial branches of the federal government. The Constitution establishes the powers of each branch and provides for elections, terms of office, and qualifications for office-holders. The first ten amendments (the Bill of Rights) protect individual rights and liberties. The 27th Amendment, which requires a two-thirds vote in both houses of Congress before an amendment can be ratified, was ratified in 1992.
+[2026-02-07 13:14:54]       --- End response ---
+[2026-02-07 13:14:54]     Iteration 2/3...
+[2026-02-07 13:15:04]       TTFT: 8.512s | Throughput: 19.2 t/s | Tokens: 200
+[2026-02-07 13:15:04]     Iteration 3/3...
+[2026-02-07 13:15:15]       TTFT: 8.654s | Throughput: 19.0 t/s | Tokens: 200
+[2026-02-07 13:15:15]     Summary: TTFT avg=8.513s, min=8.374s, max=8.654s
+[2026-02-07 13:15:15]   Prompt length target: ~20000 tokens (80000 chars)
+[2026-02-07 13:15:15]     Iteration 1/3...
+[2026-02-07 13:15:28]       TTFT: 12.322s | Throughput: 3.9 t/s | Tokens: 50
+[2026-02-07 13:15:28]       --- Model response (Qwen2.5-1.5B Q4 (llama.cpp), ~20000 tokens) ---
+[2026-02-07 13:15:28]       | The 19th Amendment states that the right of citizens of the United States to vote shall not be denied or abridged by the United States or by any State on account of sex. Congress shall have power to enforce this article by appropriate legislation.
+[2026-02-07 13:15:28]       --- End response ---
+[2026-02-07 13:15:28]     Iteration 2/3...
+[2026-02-07 13:15:42]       TTFT: 12.342s | Throughput: 14.0 t/s | Tokens: 200
+[2026-02-07 13:15:42]     Iteration 3/3...
+[2026-02-07 13:15:56]       TTFT: 12.295s | Throughput: 13.4 t/s | Tokens: 190
+[2026-02-07 13:15:56]     Summary: TTFT avg=12.320s, min=12.295s, max=12.342s
+[2026-02-07 13:15:56]   Prompt length target: ~30000 tokens (120000 chars)
+[2026-02-07 13:15:56]     Iteration 1/3...
+[2026-02-07 13:16:19]       TTFT: 21.939s | Throughput: 2.0 t/s | Tokens: 44
+[2026-02-07 13:16:19]       --- Model response (Qwen2.5-1.5B Q4 (llama.cpp), ~30000 tokens) ---
+[2026-02-07 13:16:19]       | The document discusses the Constitution of the United States, specifically the first amendment, which prohibits the establishment of religion, prohibits the free exercise of religion, abridges the freedom of speech, and the freedom of the press.
+[2026-02-07 13:16:19]       --- End response ---
+[2026-02-07 13:16:19]     Iteration 2/3...
+[2026-02-07 13:16:42]       TTFT: 22.292s | Throughput: 2.7 t/s | Tokens: 62
+[2026-02-07 13:16:42]     Iteration 3/3...
+[2026-02-07 13:17:05]       TTFT: 22.003s | Throughput: 5.0 t/s | Tokens: 117
+[2026-02-07 13:17:05]     Summary: TTFT avg=22.078s, min=21.939s, max=22.292s
+[2026-02-07 13:17:05] CMD: kill llama-server (SIGTERM)
+[2026-02-07 13:17:05] 
+[2026-02-07 13:17:05] CMD: FoundryLocalManager() — starting Foundry Local service
+[2026-02-07 13:17:12] Foundry Local endpoint: http://127.0.0.1:62130/v1
+[2026-02-07 13:17:12] 
+[2026-02-07 13:17:12] ======================================================================
+[2026-02-07 13:17:12]   Phi-3.5-mini (Foundry Local)
+[2026-02-07 13:17:12] ======================================================================
+[2026-02-07 13:17:12] CMD: foundry_local download_model('phi-3.5-mini')
+[2026-02-07 13:17:14] CMD: foundry_local load_model('phi-3.5-mini')
+[2026-02-07 13:17:18] Model loaded as: Phi-3.5-mini-instruct-generic-gpu:1
+[2026-02-07 13:17:18]   Prompt length target: ~1000 tokens (4000 chars)
+[2026-02-07 13:17:18]     Iteration 1/3...
+[2026-02-07 13:17:23]       TTFT: 2.219s | Throughput: 39.0 t/s | Tokens: 199
+[2026-02-07 13:17:23]       --- Model response (Phi-3.5-mini (Foundry Local), ~1000 tokens) ---
+[2026-02-07 13:17:23]       |  The document outlines the framework of the United States Constitution, establishing the structure and powers of the government. Key points include:
+[2026-02-07 13:17:23]       | 
+[2026-02-07 13:17:23]       | 1. Purpose: To form a more perfect union, establish justice, ensure domestic tranquility, provide for the common defense, promote the general welfare, and secure the blessings of liberty for present and future generations.
+[2026-02-07 13:17:23]       | 
+[2026-02-07 13:17:23]       | 2. Legislative Powers: Vested in a bicameral Congress, consisting of the Senate and the House of Representatives.
+[2026-02-07 13:17:23]       | 
+[2026-02-07 13:17:23]       | 3. House of Representatives: Composed of members elected every two years by the people of each state, with specific eligibility requirements (age, citizenship, and residency).
+[2026-02-07 13:17:23]       | 
+[2026-02-07 13:17:23]       | 4. Apportionment: Representatives and direct taxes to be apportioned among states based on population, with a cap of one representative for every thirty thousand people, and a minimum of one representative per state.
+[2026-02-07 13:17:23]       | 
+[2026-02-07 13:17:23]       | 5. Senate: Composed
+[2026-02-07 13:17:23]       --- End response ---
+[2026-02-07 13:17:23]     Iteration 2/3...
+[2026-02-07 13:17:28]       TTFT: 2.061s | Throughput: 41.3 t/s | Tokens: 199
+[2026-02-07 13:17:28]     Iteration 3/3...
+[2026-02-07 13:17:33]       TTFT: 1.970s | Throughput: 42.1 t/s | Tokens: 199
+[2026-02-07 13:17:33]     Summary: TTFT avg=2.083s, min=1.970s, max=2.219s
+[2026-02-07 13:17:33]   Prompt length target: ~2000 tokens (8000 chars)
+[2026-02-07 13:17:33]     Iteration 1/3...
+[2026-02-07 13:17:40]       TTFT: 3.719s | Throughput: 29.2 t/s | Tokens: 199
+[2026-02-07 13:17:40]       --- Model response (Phi-3.5-mini (Foundry Local), ~2000 tokens) ---
+[2026-02-07 13:17:40]       |  The Constitution of the United States was established to form a more perfect union, ensuring justice, domestic tranquility, defense, general welfs, and the blessings of liberty for current and future generations. The legislative power is vested in a bicameral Congress, consisting of the Senate and the House of Representatives.
+[2026-02-07 13:17:40]       | 
+[2026-02-07 13:17:40]       | The House of Representatives is composed of members elected every two years by the people of each state, with specific eligibility requirements such as age, citizenship, and residency. Representation is apportioned based on population, with a cap of one representative per thirty thousand people, and each state must have at least one representative until a full enumeration is conducted.
+[2026-02-07 13:17:40]       | 
+[2026-02-07 13:17:40]       | The Senate is composed of two senators from each state, elected for six-year terms, with staggered terms ensuring continuity. Senators must be at least thirty years old, have been U.S. citizens for nine years, and
+[2026-02-07 13:17:40]       --- End response ---
+[2026-02-07 13:17:40]     Iteration 2/3...
+[2026-02-07 13:17:46]       TTFT: 3.682s | Throughput: 29.4 t/s | Tokens: 199
+[2026-02-07 13:17:46]     Iteration 3/3...
+[2026-02-07 13:17:53]       TTFT: 3.641s | Throughput: 29.6 t/s | Tokens: 199
+[2026-02-07 13:17:53]     Summary: TTFT avg=3.681s, min=3.641s, max=3.719s
+[2026-02-07 13:17:53]   Prompt length target: ~5000 tokens (20000 chars)
+[2026-02-07 13:17:53]     Iteration 1/3...
+[2026-02-07 13:18:07]       TTFT: 10.020s | Throughput: 14.1 t/s | Tokens: 199
+[2026-02-07 13:18:07]       --- Model response (Phi-3.5-mini (Foundry Local), ~5000 tokens) ---
+[2026-02-07 13:18:07]       |  The United States Constitution establishes a federal government with three branches: legislative, executive, and judicial. The legislative power is vested in a bicameral Congress, with the House of Representatives elected every two years by the people and the Senate composed of two senators from each state chosen by the state legislature for six years. Representatives must be at least 25 years old and citizens for seven years, while senators must be at least 30 years old and citizens for nine years.
+[2026-02-07 13:18:07]       | 
+[2026-02-07 13:18:07]       | The President, elected for a four-year term, serves as the head of the executive branch and is responsible for enforcing laws, appointing officials, and conducting foreign affairs. The judicial power is vested in one Supreme Court and other inferior courts established by Congress.
+[2026-02-07 13:18:07]       | 
+[2026-02-07 13:18:07]       | The Constitution also outlines the powers and limitations of Congress and the states, including the power to tax, regulate commerce, and declare war, as well as restrictions on states
+[2026-02-07 13:18:07]       --- End response ---
+[2026-02-07 13:18:07]     Iteration 2/3...
+[2026-02-07 13:18:21]       TTFT: 9.882s | Throughput: 14.2 t/s | Tokens: 199
+[2026-02-07 13:18:21]     Iteration 3/3...
+[2026-02-07 13:18:35]       TTFT: 9.673s | Throughput: 14.4 t/s | Tokens: 199
+[2026-02-07 13:18:35]     Summary: TTFT avg=9.858s, min=9.673s, max=10.020s
+[2026-02-07 13:18:35]   Prompt length target: ~10000 tokens (40000 chars)
+[2026-02-07 13:18:35]     Iteration 1/3...
+[2026-02-07 13:19:04]       TTFT: 22.654s | Throughput: 6.9 t/s | Tokens: 199
+[2026-02-07 13:19:04]       --- Model response (Phi-3.5-mini (Foundry Local), ~10000 tokens) ---
+[2026-02-07 13:19:04]       |  The United States Constitution establishes a federal government structure with a Congress (bicameral legislature) and an executive led by the President. The House of Representatives is composed of members elected every two years by the people, with age and citizenship requirements, and apportioned based on state population. The Senate consists of two senators from each state, with age and residency requirements, and has the sole power to try impeachments. Congress has powers to legislate, tax, regulate commerce, and establish a judiciary, while the President acts as Commander-in-Chief and can veto legislation with Congress's override power.
+[2026-02-07 13:19:04]       | 
+[2026-02-07 13:19:04]       | The Constitution also outlines individual rights, such as freedom of religion, speech, press, and assembly, and the right to bear arms. It prohibits involuntary servitude, ensures due process, and equal protection under the law. The Bill of Rights (first ten amendments) guarante
+[2026-02-07 13:19:04]       --- End response ---
+[2026-02-07 13:19:04]     Iteration 2/3...
+[2026-02-07 13:19:32]       TTFT: 22.062s | Throughput: 7.1 t/s | Tokens: 199
+[2026-02-07 13:19:32]     Iteration 3/3...
+[2026-02-07 13:20:00]       TTFT: 21.799s | Throughput: 7.1 t/s | Tokens: 199
+[2026-02-07 13:20:00]     Summary: TTFT avg=22.172s, min=21.799s, max=22.654s
+[2026-02-07 13:20:00]   Prompt length target: ~15000 tokens (60000 chars)
+[2026-02-07 13:20:00]     Iteration 1/3...
+[2026-02-07 13:20:50]       TTFT: 39.026s | Throughput: 4.0 t/s | Tokens: 199
+[2026-02-07 13:20:50]       --- Model response (Phi-3.5-mini (Foundry Local), ~15000 tokens) ---
+[2026-02-07 13:20:50]       |  The United States Constitution establishes a federal government with a Congress (bicameral legislature) and an executive led by the President. The House of Representatives is made up of members elected every two years by the people, with a cap of one representative per thirty thousand people, and a minimum of one representative per state. Senators serve six-year terms, with two from each state, and must be at least thirty years old and U.S. citizens for at least nine years. The President, elected for a four-year term, has powers including military command, treaty making, and appointments. Congress has powers to tax, regulate commerce, establish a uniform rule of naturalization, and more, but cannot levy taxes on exports or coin money. The Constitution also outlines the Bill of Rights, including amendments prohibiting slavery, ensuring voting rights regardless of race, sex, or age, and prohibiting poll taxes. The Constitution can
+[2026-02-07 13:20:50]       --- End response ---
+[2026-02-07 13:20:50]     Iteration 2/3...
+[2026-02-07 13:21:37]       TTFT: 38.000s | Throughput: 4.2 t/s | Tokens: 199
+[2026-02-07 13:21:37]     Iteration 3/3...
+[2026-02-07 13:22:25]       TTFT: 38.736s | Throughput: 4.1 t/s | Tokens: 199
+[2026-02-07 13:22:25]     Summary: TTFT avg=38.587s, min=38.000s, max=39.026s
+[2026-02-07 13:22:25]   Prompt length target: ~20000 tokens (80000 chars)
+[2026-02-07 13:22:25]     Iteration 1/3...
+[2026-02-07 13:23:38]       TTFT: 59.649s | Throughput: 2.7 t/s | Tokens: 199
+[2026-02-07 13:23:38]       --- Model response (Phi-3.5-mini (Foundry Local), ~20000 tokens) ---
+[2026-02-07 13:23:38]       |  The United States Constitution establishes a federal government with three branches: legislative, executive, and judicial. The legislative power is vested in Congress, which consists of the Senate and the House of Representatives. Representatives must be at least 25 years old, a U.S. citizen for seven years, and a resident of the state they represent. Senators must be at least 30 years old, a U.S. citizen for nine years, and a resident of the state they represent. The President, elected for a four-year term, is the head of the executive branch and can be impeached. The judicial power is vested in the Supreme Court and other federal courts. The Constitution guarantees states' rights and a republican form of government, prohibits slavery, and ensures due process and equal protection under the law. The Bill of Rights outlines specific protections for speech, religion, military quartering, search and
+[2026-02-07 13:23:38]       --- End response ---
+[2026-02-07 13:23:38]     Iteration 2/3...
+[2026-02-07 13:24:50]       TTFT: 59.151s | Throughput: 2.8 t/s | Tokens: 199
+[2026-02-07 13:24:50]     Iteration 3/3...
+[2026-02-07 13:26:02]       TTFT: 59.133s | Throughput: 2.8 t/s | Tokens: 199
+[2026-02-07 13:26:02]     Summary: TTFT avg=59.311s, min=59.133s, max=59.649s
+[2026-02-07 13:26:02]   Prompt length target: ~30000 tokens (120000 chars)
+[2026-02-07 13:26:02]     Iteration 1/3...
+[2026-02-07 14:20:43]       ERROR: Connection error.
+[2026-02-07 14:20:43]     Iteration 2/3...
+[2026-02-07 14:20:45]       ERROR: Connection error.
+[2026-02-07 14:20:45]     Iteration 3/3...
+[2026-02-07 14:20:46]       ERROR: Connection error.
+[2026-02-07 14:20:46] 
+[2026-02-07 14:20:46] ======================================================================
+[2026-02-07 14:20:46]   Qwen2.5-1.5B (Foundry Local)
+[2026-02-07 14:20:46] ======================================================================
+[2026-02-07 14:20:46] CMD: foundry_local download_model('qwen2.5-1.5b')
+[2026-02-07 14:20:46] ⚠  Skipping Foundry Local tests: Could not connect to Foundry Local! Please check if the Foundry Local service is running and the host URL is correct.
+[2026-02-07 14:20:46] Raw data saved to /Users/natke/Documents/Adobe/model-performance-tests/results/ttft_constit/ttft_data.json
+[2026-02-07 14:20:47] Chart saved to /Users/natke/Documents/Adobe/model-performance-tests/results/ttft_constit/ttft_chart.png
+[2026-02-07 14:20:47] Test run complete
+[2026-02-07 14:21:43] 
+[2026-02-07 14:21:43] ======================================================================
+[2026-02-07 14:21:43] RE-RUN: Qwen2.5-1.5B (Foundry Local) — Constitution prompts
+[2026-02-07 14:21:43] ======================================================================
+[2026-02-07 14:22:01] Foundry Local endpoint: http://127.0.0.1:59101/v1
+[2026-02-07 14:22:07] Model loaded as: qwen2.5-1.5b-instruct-generic-gpu:4
+[2026-02-07 14:22:07]   Prompt length target: ~1000 tokens (4000 chars)
+[2026-02-07 14:22:07]     Iteration 1/3...
+[2026-02-07 14:22:10]       TTFT: 2.303s | Throughput: 42.5 t/s | Tokens: 143
+[2026-02-07 14:22:10]       --- Model response (Qwen2.5-1.5B (Foundry Local), ~1000 tokens) ---
+[2026-02-07 14:22:10]       | This is a summary of the US Constitution's preamble and Article I, Section 1. It outlines the structure of the government and how representatives are chosen. Key points include:
+[2026-02-07 14:22:10]       | - Legislative powers vest in Congress consisting of a Senate and House of Representatives.
+[2026-02-07 14:22:10]       | - Representatives are chosen by the people of each state based on population.
+[2026-02-07 14:22:10]       | - No person can serve as a representative under age 25 or less than seven years as a citizen of the US.
+[2026-02-07 14:22:10]       | - The House has the power to impeach federal officials.
+[2026-02-07 14:22:10]       | - Senators are chosen by state legislatures and serve six-year terms with staggered elections.
+[2026-02-07 14:22:10]       | - The vice president serves as the presiding officer of the senate and casts a vote only in case of a tie.
+[2026-02-07 14:22:10]       --- End response ---
+[2026-02-07 14:22:10]     Iteration 2/3...
+[2026-02-07 14:22:12]       TTFT: 1.008s | Throughput: 69.4 t/s | Tokens: 143
+[2026-02-07 14:22:12]     Iteration 3/3...
+[2026-02-07 14:22:14]       TTFT: 1.002s | Throughput: 69.5 t/s | Tokens: 143
+[2026-02-07 14:22:14]     Summary: TTFT avg=1.438s, min=1.002s, max=2.303s
+[2026-02-07 14:22:14]   Prompt length target: ~2000 tokens (8000 chars)
+[2026-02-07 14:22:14]     Iteration 1/3...
+[2026-02-07 14:22:18]       TTFT: 1.613s | Throughput: 62.3 t/s | Tokens: 199
+[2026-02-07 14:22:18]       --- Model response (Qwen2.5-1.5B (Foundry Local), ~2000 tokens) ---
+[2026-02-07 14:22:18]       | **Summary:**  
+[2026-02-07 14:22:18]       | - **Purpose**: To establish a government framework.
+[2026-02-07 14:22:18]       | - **Legislative Branch**: 
+[2026-02-07 14:22:18]       |   - **Congress**: Composed of a Senate and House of Representatives.
+[2026-02-07 14:22:18]       |   - **House of Representatives**: Chosen by state legislatures, must attain age 25 and live in the state for 7 years.
+[2026-02-07 14:22:18]       |   - **Senate**: Voted by states, lasts 6 years, with staggered terms.
+[2026-02-07 14:22:18]       | - **Elections**: Every 2 years, with immediate elections after the first meeting of Congress.
+[2026-02-07 14:22:18]       | - **Impeachment**: Sole power of impeachment belongs to the House of Representatives.
+[2026-02-07 14:22:18]       | - **Quorums**: A majority of members constitutes a quorum.
+[2026-02-07 14:22:18]       | - **Sessions**: At least once per year, usually in late November/early December.
+[2026-02-07 14:22:18]       | - **Compensation**: Members receive compensation from the treasury.
+[2026-02-07 14:22:18]       | - **Privileges**: Members are exempt from arrest while attending sessions.
+[2026-02-07 14:22:18]       | - **Civil Offices**: No member can serve concurrently in a civil office created during
+[2026-02-07 14:22:18]       --- End response ---
+[2026-02-07 14:22:18]     Iteration 2/3...
+[2026-02-07 14:22:21]       TTFT: 1.756s | Throughput: 60.6 t/s | Tokens: 199
+[2026-02-07 14:22:21]     Iteration 3/3...
+[2026-02-07 14:22:24]       TTFT: 1.695s | Throughput: 61.4 t/s | Tokens: 199
+[2026-02-07 14:22:24]     Summary: TTFT avg=1.688s, min=1.613s, max=1.756s
+[2026-02-07 14:22:24]   Prompt length target: ~5000 tokens (20000 chars)
+[2026-02-07 14:22:24]     Iteration 1/3...
+[2026-02-07 14:22:30]       TTFT: 3.906s | Throughput: 35.4 t/s | Tokens: 199
+[2026-02-07 14:22:30]       --- Model response (Qwen2.5-1.5B (Foundry Local), ~5000 tokens) ---
+[2026-02-07 14:22:30]       | **Key Points Summary:** 
+[2026-02-07 14:22:30]       | 
+[2026-02-07 14:22:30]       | - **Constitution Establishment**: The U.S. Constitution establishes a federal government with three branches - legislative, executive, and judiciary.
+[2026-02-07 14:22:30]       | - **Legislative Branch**: 
+[2026-02-07 14:22:30]       |   - Congress consists of a Senate and House of Representatives.
+[2026-02-07 14:22:30]       |   - Both chambers must have a majority to pass legislation.
+[2026-02-07 14:22:30]       | - **Executive Branch**: 
+[2026-02-07 14:22:30]       |   - Headed by the President, who serves a term of four years.
+[2026-02-07 14:22:30]       |   - The President has power to appoint Cabinet members, Supreme Court justices, ambassadors, etc., with Senate approval.
+[2026-02-07 14:22:30]       | - **Judicial Branch**: 
+[2026-02-07 14:22:30]       |   - Divided into federal courts, including the Supreme Court.
+[2026-02-07 14:22:30]       |   - Judges serve lifetime terms.
+[2026-02-07 14:22:30]       | - **Elections and Voting**: 
+[2026-02-07 14:22:30]       |   - Members of Congress are elected by popular vote.
+[2026-02-07 14:22:30]       |   - Each state gets a certain number of representatives based on population.
+[2026-02-07 14:22:30]       | - **Impeachment**: 
+[2026-02-07 14:22:30]       |   - The House can impeach officials, while the Senate conducts trials and votes to convict.
+[2026-02-07 14:22:30]       | - **Powers
+[2026-02-07 14:22:30]       --- End response ---
+[2026-02-07 14:22:30]     Iteration 2/3...
+[2026-02-07 14:22:35]       TTFT: 3.765s | Throughput: 36.3 t/s | Tokens: 199
+[2026-02-07 14:22:35]     Iteration 3/3...
+[2026-02-07 14:22:41]       TTFT: 3.875s | Throughput: 35.6 t/s | Tokens: 199
+[2026-02-07 14:22:41]     Summary: TTFT avg=3.849s, min=3.765s, max=3.906s
+[2026-02-07 14:22:41]   Prompt length target: ~10000 tokens (40000 chars)
+[2026-02-07 14:22:41]     Iteration 1/3...
+[2026-02-07 14:22:52]       TTFT: 8.614s | Throughput: 18.2 t/s | Tokens: 199
+[2026-02-07 14:22:52]       --- Model response (Qwen2.5-1.5B (Foundry Local), ~10000 tokens) ---
+[2026-02-07 14:22:52]       | **Key Points Summary:**
+[2026-02-07 14:22:52]       | 
+[2026-02-07 14:22:52]       | - **Constitution Creation**: The Constitution establishes a federal system of government with three branches - legislative, executive, and judiciary.
+[2026-02-07 14:22:52]       |   
+[2026-02-07 14:22:52]       | - **Legislative Branch**: 
+[2026-02-07 14:22:52]       |   - Congress consists of a Senate and House of Representatives.
+[2026-02-07 14:22:52]       |   - Both chambers are elected every second year by the people of the respective states.
+[2026-02-07 14:22:52]       |   - Each chamber has specific roles and powers related to taxation, impeachment, etc.
+[2026-02-07 14:22:52]       | 
+[2026-02-07 14:22:52]       | - **Executive Branch**: 
+[2026-02-07 14:22:52]       |   - The President serves as the head of state and government.
+[2026-02-07 14:22:52]       |   - He holds various powers including command of the armed forces, appointment of officials, and veto power.
+[2026-02-07 14:22:52]       |   - The Vice President acts as the President's designated successor.
+[2026-02-07 14:22:52]       | 
+[2026-02-07 14:22:52]       | - **Judicial Branch**: 
+[2026-02-07 14:22:52]       |   - Supreme Court justices serve lifetime terms.
+[2026-02-07 14:22:52]       |   - Other courts are established by Congress to interpret laws and resolve disputes.
+[2026-02-07 14:22:52]       | 
+[2026-02-07 14:22:52]       | - **Powers of Congress**: 
+[2026-02-07 14:22:52]       |   - Can tax, spend money, borrow money, and regulate commerce.
+[2026-02-07 14:22:52]       |   - Has the power to
+[2026-02-07 14:22:52]       --- End response ---
+[2026-02-07 14:22:52]     Iteration 2/3...
+[2026-02-07 14:23:03]       TTFT: 8.672s | Throughput: 18.2 t/s | Tokens: 199
+[2026-02-07 14:23:03]     Iteration 3/3...
+[2026-02-07 14:23:14]       TTFT: 8.664s | Throughput: 18.2 t/s | Tokens: 199
+[2026-02-07 14:23:14]     Summary: TTFT avg=8.650s, min=8.614s, max=8.672s
+[2026-02-07 14:23:14]   Prompt length target: ~15000 tokens (60000 chars)
+[2026-02-07 14:23:14]     Iteration 1/3...
+[2026-02-07 14:23:32]       TTFT: 15.574s | Throughput: 10.7 t/s | Tokens: 199
+[2026-02-07 14:23:32]       --- Model response (Qwen2.5-1.5B (Foundry Local), ~15000 tokens) ---
+[2026-02-07 14:23:32]       | **Key Points Summary:**
+[2026-02-07 14:23:32]       | 
+[2026-02-07 14:23:32]       | - **Constitution Creation:** The Constitution establishes the federal government of the United States.
+[2026-02-07 14:23:32]       | - **Legislative Branch:** Congress consists of a Senate and a House of Representatives.
+[2026-02-07 14:23:32]       | - **Representation:** Members are chosen by the people of each state based on population.
+[2026-02-07 14:23:32]       | - **Qualifications:** Representatives must be 25 years old and residents of the state they represent for seven years.
+[2026-02-07 14:23:32]       | - **Impeachment:** The House of Representatives can impeach officials, while the Senate conducts trials.
+[2026-02-07 14:23:32]       | - **Elections:** Each House decides how elections are conducted and sets times for meetings.
+[2026-02-07 14:23:32]       | - **Oaths:** All officials take oaths to uphold the Constitution.
+[2026-02-07 14:23:32]       | - **Executive Branch:** The president holds office for four years and serves alongside the vice president.
+[2026-02-07 14:23:32]       | - **Vice President:** He acts as president if the incumbent is unable to serve.
+[2026-02-07 14:23:32]       | - **States' Rights:** The Constitution grants significant powers to individual states.
+[2026-02-07 14:23:32]       | - **Amendments:** The Constitution allows for amendments
+[2026-02-07 14:23:32]       --- End response ---
+[2026-02-07 14:23:32]     Iteration 2/3...
+[2026-02-07 14:23:51]       TTFT: 15.386s | Throughput: 10.8 t/s | Tokens: 199
+[2026-02-07 14:23:51]     Iteration 3/3...
+[2026-02-07 14:24:09]       TTFT: 15.057s | Throughput: 11.0 t/s | Tokens: 199
+[2026-02-07 14:24:09]     Summary: TTFT avg=15.339s, min=15.057s, max=15.574s
+[2026-02-07 14:24:09]   Prompt length target: ~20000 tokens (80000 chars)
+[2026-02-07 14:24:09]     Iteration 1/3...
+[2026-02-07 14:24:35]       TTFT: 22.397s | Throughput: 7.5 t/s | Tokens: 199
+[2026-02-07 14:24:35]       --- Model response (Qwen2.5-1.5B (Foundry Local), ~20000 tokens) ---
+[2026-02-07 14:24:35]       | **Key Points Summary**
+[2026-02-07 14:24:35]       | 
+[2026-02-07 14:24:35]       | - **Constitutional Convention**: The document outlines the structure of the U.S. government, emphasizing separation of powers and checks and balances.
+[2026-02-07 14:24:35]       |   
+[2026-02-07 14:24:35]       | - **Legislative Branch**: 
+[2026-02-07 14:24:35]       |   - Congress consists of a Senate and a House of Representatives.
+[2026-02-07 14:24:35]       |   - All legislative powers are vested in Congress.
+[2026-02-07 14:24:35]       |   
+[2026-02-07 14:24:35]       | - **Representation**: 
+[2026-02-07 14:24:35]       |   - Representatives are chosen by the people of each state every second year.
+[2026-02-07 14:24:35]       |   - Each state gets a minimum of one representative.
+[2026-02-07 14:24:35]       |   
+[2026-02-07 14:24:35]       | - **Voting Rights**: 
+[2026-02-07 14:24:35]       |   - Only citizens of the US and residents for at least ten years can serve as representatives.
+[2026-02-07 14:24:35]       |   - No person serving as president or vice-president can hold any federal office during their tenure.
+[2026-02-07 14:24:35]       | 
+[2026-02-07 14:24:35]       | - **Impeachment**: 
+[2026-02-07 14:24:35]       |   - The House of Representatives has the sole power to impeach officials.
+[2026-02-07 14:24:35]       |   - The Senate conducts trials and votes on conviction.
+[2026-02-07 14:24:35]       | 
+[2026-02-07 14:24:35]       | - **Judicial Branch**: 
+[2026-02-07 14:24:35]       |   - The Supreme Court holds the judicial power.
+[2026-02-07 14:24:35]       |   - It extends to various
+[2026-02-07 14:24:35]       --- End response ---
+[2026-02-07 14:24:35]     Iteration 2/3...
+[2026-02-07 14:25:02]       TTFT: 22.517s | Throughput: 7.5 t/s | Tokens: 199
+[2026-02-07 14:25:02]     Iteration 3/3...
+[2026-02-07 14:25:28]       TTFT: 22.421s | Throughput: 7.5 t/s | Tokens: 199
+[2026-02-07 14:25:28]     Summary: TTFT avg=22.445s, min=22.397s, max=22.517s
+[2026-02-07 14:25:28]   Prompt length target: ~30000 tokens (120000 chars)
+[2026-02-07 14:25:28]     Iteration 1/3...
+[2026-02-07 14:26:15]       TTFT: 43.305s | Throughput: 1.7 t/s | Tokens: 79
+[2026-02-07 14:26:15]       --- Model response (Qwen2.5-1.5B (Foundry Local), ~30000 tokens) ---
+[2026-02-07 14:26:15]       | The document discusses the formation of the United States Constitution through the Constitutional Convention. It outlines the structure of the federal government, including the roles of Congress, the president, and the judiciary. Key sections cover the composition of Congress, the powers of the executive and legislative branches, and the rights and responsibilities of citizens. The document emphasizes the principles of democracy, justice, and the protection of individual liberties.
+[2026-02-07 14:26:15]       --- End response ---
+[2026-02-07 14:26:15]     Iteration 2/3...
+[2026-02-07 14:27:00]       TTFT: 42.705s | Throughput: 1.7 t/s | Tokens: 79
+[2026-02-07 14:27:00]     Iteration 3/3...
+[2026-02-07 14:27:45]       TTFT: 42.432s | Throughput: 1.8 t/s | Tokens: 79
+[2026-02-07 14:27:45]     Summary: TTFT avg=42.814s, min=42.432s, max=43.305s
+[2026-02-07 14:27:45] Merged data saved to /Users/natke/Documents/Adobe/model-performance-tests/results/ttft_constit/ttft_data.json
+[2026-02-07 14:27:46] Chart saved to /Users/natke/Documents/Adobe/model-performance-tests/results/ttft_constit/ttft_chart.png
+[2026-02-07 14:55:19] 
+[2026-02-07 14:55:19] ======================================================================
+[2026-02-07 14:55:19] RE-RUN: Phi-3.5-mini (Foundry Local) — 25K & 30K token prompts
+[2026-02-07 14:55:19] ======================================================================
+[2026-02-07 14:55:26] Foundry Local endpoint: http://127.0.0.1:59101/v1
+[2026-02-07 14:55:33] Model loaded as: Phi-3.5-mini-instruct-generic-gpu:1
+[2026-02-07 14:55:33]   Prompt length target: ~25000 tokens (100000 chars)
+[2026-02-07 14:55:33]     Iteration 1/3...
+[2026-02-07 14:57:15]       TTFT: 83.979s | Throughput: 2.0 t/s | Tokens: 199
+[2026-02-07 14:57:15]       --- Model response (Phi-3.5-mini (Foundry Local), ~25000 tokens) ---
+[2026-02-07 14:57:15]       |  The United States Constitution establishes a federal government with a Congress consisting of a Senate and House of Representatives. The House of Representatives must be composed of citizens at least 25 years old, native-born or naturalized for seven years, and residents of the state they represent. Representation is based on state population, with a cap of one representative per thirty thousand people, and each state must have at least one representative until an actual enumeration is conducted.
+[2026-02-07 14:57:15]       | 
+[2026-02-07 14:57:15]       | The Senate comprises two senators from each state, elected by the state legislature, serving six-year terms with staggered elections to ensure continuity. Senators must be at least 30 years old and residents of the state they represent. The Vice President, as President of the Senate, has a tie-breaking vote but otherwise does not vote.
+[2026-02-07 14:57:15]       | 
+[2026-02-07 14:57:15]       | Congress has the power to lay and collect taxes, regulate commerce, establish a uniform rule of naturalization, and coin money
+[2026-02-07 14:57:15]       --- End response ---
+[2026-02-07 14:57:15]     Iteration 2/3...
+[2026-02-07 14:58:57]       TTFT: 83.811s | Throughput: 1.9 t/s | Tokens: 199
+[2026-02-07 14:58:57]     Iteration 3/3...
+[2026-02-07 15:00:40]       TTFT: 84.901s | Throughput: 1.9 t/s | Tokens: 199
+[2026-02-07 15:00:40]     Summary: TTFT avg=84.231s, min=83.811s, max=84.901s
+[2026-02-07 15:00:40]   Prompt length target: ~30000 tokens (120000 chars)
+[2026-02-07 15:00:40]     Iteration 1/3...
+[2026-02-07 15:02:57]       TTFT: 112.472s | Throughput: 1.5 t/s | Tokens: 199
+[2026-02-07 15:02:57]       --- Model response (Phi-3.5-mini (Foundry Local), ~30000 tokens) ---
+[2026-02-07 15:02:57]       |  The United States Constitution establishes a federal government with a system of checks and balances, vested in a Congress (bicameral legislature), a President, and a judiciary. The Constitution mandates that all legislative powers be in Congress, which consists of a Senate and a House of Representatives, with specific eligibility requirements for Representatives and Senators. The President, elected for a four-year term, serves as the head of state and commander-in-chief, with the power to appoint and remove officers, make treaties, and grant pardons. The judiciary, led by the Supreme Court, interprets laws and tries cases.
+[2026-02-07 15:02:57]       | 
+[2026-02-07 15:02:57]       | The Constitution also outlines the process for amending itself, with ratification by three-fourths of the states. The Bill of Rights, as amendments, guarantees fundamental freedoms such as religion, speech, and the right to bear arms, and prohibits slavery
+[2026-02-07 15:02:57]       --- End response ---
+[2026-02-07 15:02:57]     Iteration 2/3...
+[2026-02-07 15:05:12]       TTFT: 111.672s | Throughput: 1.5 t/s | Tokens: 199
+[2026-02-07 15:05:12]     Iteration 3/3...
+[2026-02-07 15:07:28]       TTFT: 111.834s | Throughput: 1.5 t/s | Tokens: 199
+[2026-02-07 15:07:28]     Summary: TTFT avg=111.992s, min=111.672s, max=112.472s
+[2026-02-07 15:07:28] Merged data saved to /Users/natke/Documents/Adobe/model-performance-tests/results/ttft_constit/ttft_data.json
+[2026-02-07 15:07:30] Chart saved to /Users/natke/Documents/Adobe/model-performance-tests/results/ttft_constit/ttft_chart.png
