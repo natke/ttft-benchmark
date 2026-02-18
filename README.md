@@ -32,14 +32,43 @@ brew install foundrylocal
 brew install llama.cpp
 ```
 
+### Windows
+
+```powershell
+# Install Foundry Local
+# Download the installer from:
+# https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/get-started
+# Or use winget:
+winget install Microsoft.FoundryLocal
+
+# Install llama.cpp (optional)
+# Option 1: Using winget
+winget install llama.cpp
+
+# Option 2: Download pre-built binaries
+# Download from https://github.com/ggml-org/llama.cpp/releases
+# Extract and add to PATH
+```
+
 ## Installation
 
-```bash
-cd model-performance-tests
+### macOS/Linux
 
+```bash
 # Create and activate a virtual environment
 python3 -m venv .venv
 source .venv/bin/activate
+
+# Install dependencies
+pip install -r requirements.txt
+```
+
+### Windows
+
+```powershell
+# Create and activate a virtual environment
+python -m venv .venv
+.venv\Scripts\Activate.ps1
 
 # Install dependencies
 pip install -r requirements.txt
@@ -49,50 +78,17 @@ This installs:
 - `openai` — OpenAI-compatible API client
 - `foundry-local-sdk` — Foundry Local model management
 
-## Quick Start
+## Configured models
 
-### Run the test suite (interactive)
-
-```bash
-source .venv/bin/activate
-python example_test.py
-```
-
-You'll see a menu:
-
-```
-Available tests:
-  1. Adobe document scenarios (Foundry Local) - Default
-  2. Model comparison (Foundry Local)
-  3. Hardware-specific tests (Foundry Local)
-  4. llama.cpp tests (phi-3.5-mini-Q4 & qwen2.5-1.5b-Q4)
-  5. All Foundry Local tests
-```
-
-### Option 1–3: Foundry Local
-
-The script uses the `foundry-local-sdk` to automatically:
-1. Start the Foundry Local service
-2. Download models if not already cached
-3. Load models into the inference server
-4. Run tests via the OpenAI-compatible API at the service endpoint
-
-**Configured models:**
 - `phi-3.5-mini` — 3.8B params, 128k context
 - `qwen2.5-1.5b` — 1.5B params, fast and lightweight
 
-### Option 4: llama.cpp
-
-Runs tests against the llama.cpp server using GGUF-quantized models. The script manages the server lifecycle automatically (start → test → stop → next model).
-
-**Required GGUF models** (downloaded to `models/` directory):
+### GGUF Models Required GGUF models** (download to `models/` directory):
 
 | Model | File | Size | Source |
 |-------|------|------|--------|
 | Phi-3.5-mini Q4 | `Phi-3.5-mini-instruct-Q4_K_M.gguf` | ~2.2 GB | [bartowski/Phi-3.5-mini-instruct-GGUF](https://huggingface.co/bartowski/Phi-3.5-mini-instruct-GGUF) |
 | Qwen2.5-1.5B Q4 | `Qwen2.5-1.5B-Instruct-Q4_K_M.gguf` | ~1.0 GB | [Qwen/Qwen2.5-1.5B-Instruct-GGUF](https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct-GGUF) |
-
-**Download the models:**
 
 ```bash
 mkdir -p models
@@ -117,7 +113,7 @@ source .venv/bin/activate
 pip install matplotlib numpy
 ```
 
-Ensure the GGUF models are downloaded (see [Option 4: llama.cpp](#option-4-llamacpp) above) and Foundry Local is installed.
+Ensure the GGUF models are downloaded
 
 ### Run the tests
 
@@ -195,7 +191,9 @@ python generate_ttft_chart.py --results-dir results/ttft_constit_windows
 - The full test run takes approximately **30–60 minutes** depending on hardware (longer on Windows with Intel integrated graphics).
 - The `prompts/` directory contains sample prompt text files (e.g. `constit.txt`) that can be used for realistic document-based testing.
 
-## macOS Benchmark Results (February 2026)
+## Results
+
+### macOS Benchmark Results (February 2026)
 
 **Hardware:** Apple Silicon (arm64), macOS 15.7.3
 **Test document:** U.S. Constitution (`prompts/constit.txt`, ~11K tokens)
@@ -245,7 +243,7 @@ Full log: [`results/ttft_constit_mac/test_run.log`](results/ttft_constit_mac/tes
 
 ---
 
-## Windows Benchmark Results (February 2026)
+### Windows Benchmark Results (February 2026)
 
 **Hardware:** Intel i7-12700H, Intel Iris Xe Graphics, 32 GB RAM, Windows 11 (10.0.26567)
 
@@ -265,7 +263,7 @@ Full log: [`results/ttft_constit_mac/test_run.log`](results/ttft_constit_mac/tes
 | **25K** | TIMEOUT | TIMEOUT | crashed | 139.70 |
 | **30K** | TIMEOUT | TIMEOUT | crashed | 285.76 |
 
-![TTFT Windows Results](results/ttft_constit_windows/ttft_windows_results.png)
+![TTFT Windows Results](results/ttft_constit_windows/ttft_chart.png)
 
 ### Key Takeaways
 
@@ -273,7 +271,7 @@ Full log: [`results/ttft_constit_mac/test_run.log`](results/ttft_constit_mac/tes
 
 2. **Qwen2.5-1.5B on Foundry Local is the clear winner** — the only configuration that completed all prompt lengths up to 30K. At 1K tokens it achieved **1.79s TTFT** vs 9.05s for Phi-3.5-mini on llama.cpp (5× faster).
 
-3. **llama.cpp hits a wall at 10K–15K tokens** on this hardware — both models timed out (>5 min) at 15K. The GPU isn't well-utilized by llama.cpp's CUDA/Vulkan path on Intel integrated graphics.
+3. **llama.cpp hits a wall at 10K–15K tokens** on this hardware — both models timed out (>5 min) at 15K. The GPU isn't well-utilized by llama.cpp on Intel integrated graphics.
 
 4. **Phi-3.5-mini Foundry crashed at 15K** — the service dropped the connection (`WinError 10054`), likely an OOM or context-length issue with the OpenVINO model. Results at 1K–10K were solid though.
 
@@ -456,28 +454,27 @@ class MyCustomBackend(ModelPerformanceTest):
 ## Project Structure
 
 ```
-model-performance-tests/
+ttft-benchmark/
 ├── run_ttft_benchmark.py        # Main TTFT benchmark (cross-platform, all features)
 ├── generate_ttft_chart.py       # Generate chart from saved results (any platform)
 ├── requirements.txt             # Python dependencies
 ├── README.md
-├── FOUNDRY_LOCAL_SETUP.md       # Foundry Local setup guide
-├── models/                      # GGUF models for llama.cpp
-│   ├── Phi-3.5-mini-instruct-Q4_K_M.gguf
-│   └── Qwen2.5-1.5B-Instruct-Q4_K_M.gguf
+├── .gitignore
 ├── prompts/                     # Sample prompt text files
 │   └── constit.txt
-├── archive/                     # Deprecated scripts kept for reference
-│   ├── example_test.py          # Interactive test runner (Adobe scenarios)
-│   ├── test_framework.py        # Base framework classes
-│   └── generate_ttft_chart.py   # Original Mac benchmark
-├── reruns/                      # One-off re-run scripts for partial data
 ├── results/                     # Test output (auto-created)
 │   ├── ttft_constit_mac/        # macOS benchmark results
-│   ├── ttft_constit_windows/    # Windows benchmark results
-│   ├── adobe_tests/
-│   └── ...
-└── .venv/                       # Virtual environment
+│   │   ├── ttft_data.json
+│   │   ├── ttft_chart.png
+│   │   ├── ttft_macos_results.png
+│   │   ├── ttft_windows_results.png
+│   │   └── test_run.log
+│   └── ttft_constit_windows/    # Windows benchmark results
+│       ├── ttft_data.json
+│       ├── ttft_chart.png
+│       ├── system_info.json
+│       └── test_run.log
+└── .venv/                       # Virtual environment (created during installation)
 ```
 
 ## Troubleshooting
