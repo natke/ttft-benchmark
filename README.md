@@ -1,4 +1,4 @@
-# Model Performance Test Framework
+# TTFT Benchmark
 
 A Python framework for measuring Time to First Token (TTFT) and throughput across different models and prompt lengths. Supports both **Foundry Local** and **llama.cpp** backends.
 
